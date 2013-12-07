@@ -2,3 +2,21 @@
 auto: true
 exclude: [".gitignore", "readme.md", "Gemfile", "Gemfile.lock"]
 ga_username: 'UA-367775-15'
+markdown: rdiscount
+permalink: pretty
+
+projects:
+  - title: Bike Accidents Visualisation 
+    label: d3
+  - title: Renewable Energy Act Visualisation
+    label: d3
+  - title: plotmapbox
+    label: R package
+  - title: Party mentions in ZEIT ONLINE 
+    label: Javascript
+  - title: SDUT-Ebook-Notification
+    label: Python
+  - title: TeamPlugin
+    label: Wordpress Plugin
+  - title: Teamlab-Member-Map
+    label: leaflet
