@@ -7,16 +7,42 @@ permalink: pretty
 
 projects:
   - title: Bike Accidents Visualisation 
-    label: d3
+    description: A d3 visualisation of bike accidents in Germany
+    technology: d3, jQuery,Bootstrap
+    language: Javascript
+    year: Feb. 2013
+    github: http://github.com/milafrerichs/fahrradunfaelle 
+    url: http://milafrerichs.github.io/fahrradunfaelle/
   - title: Renewable Energy Act Visualisation
-    label: d3
+    description: A d3 visualisation 
+    technology: d3, jQuery,Bootstrap
+    language: Javascript
+    year: Feb. 2013
+    github: https://github.com/milafrerichs/eeg_unternehmen
+    url: http://milafrerichs.github.io/eeg_unternehmen/
   - title: plotmapbox
-    label: R package
+    description: A R package to visualize data on a mapbox map
+    technology: Mapbox
+    language: R
+    year: Sept. 2013
+    github: https://github.com/milafrerichs/plotmapbox
   - title: Party mentions in ZEIT ONLINE 
-    label: Javascript
+    description: A visualization of articles per democratic party in German Newspaper ZEIT using the ZEIT API.
+    technology: Hightcharts, jQuery, ZEIT API
+    language: Javascript
+    year: Nov. 2012
+    github: https://github.com/milafrerichs/ZeitParteienArtikel
   - title: SDUT-Ebook-Notification
+    description: San Diego Union Tribune Ebook Notification Script, sends a mobi per Email to your Kindle
+    technology: HTMLParser
+    language: Python
+    year: Apr. 2012
+    github: http://github.com/milafrerichs/fahrradunfaelle 
+    url: http://milafrerichs.github.io/fahrradunfaelle/
     label: Python
   - title: TeamPlugin
-    label: Wordpress Plugin
-  - title: Teamlab-Member-Map
-    label: leaflet
+    description: A Plugin for Wordpress for Baseball/Softball Teams
+    technology: Wordpress
+    language: PHP
+    year: Jul 2011
+    github: https://github.com/milafrerichs/TeamPlugin
