@@ -1,0 +1,362 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+h1, h2 {
+  text-align: center;
+  color: #fff; }
+
+h1 {
+  font-size: 10em; }
+
+h2 {
+  font-size: 5em; }
+
+.pagebg {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -10;
+  display: none;
+  background-size: cover; }
+  .pagebg.sd {
+    background-image: url("/assets/images/gaslamp.jpg");
+    display: block; }
+  .pagebg.contributions {
+    background-image: url("/assets/images/theatre.jpg"); }
+  .pagebg.leisure {
+    background-image: url("/assets/images/skiitalia.jpg"); }
+
+section {
+  *zoom: 1;
+  display: block;
+  position: relative; }
+  section:before, section:after {
+    content: " ";
+    display: table; }
+  section:after {
+    clear: both; }
+  section h1 {
+    font-size: 10.5em;
+    line-height: 1em;
+    color: #fff;
+    margin: 15px; }
+  section h2 {
+    font-size: 5em;
+    line-height: 1em;
+    color: #fff; }
+  section#main {
+    background: rgba(55, 85, 133, 0.6); }
+  section#projects {
+    background: #316058; }
+  section#dev {
+    background: rgba(181, 91, 82, 0.6); }
+  section#places {
+    background: #024a58; }
+    section#places #map {
+      width: 100%; }
+  section#leisure {
+    background: rgba(55, 85, 133, 0.8); }
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  padding: 10px;
+  background: #ccc;
+  z-index: 10; }
+  #nav ul {
+    margin: 0;
+    padding: 0; }
+    #nav ul li {
+      list-style: none;
+      float: left; }
+
+.vertical-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left; }
+
+#main-content {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #main-content:before, #main-content:after {
+    content: " ";
+    display: table; }
+  #main-content:after {
+    clear: both; }
+  #main-content #me {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 34.11922%;
+    width: 25em;
+    height: 25em; }
+    #main-content #me:last-child {
+      margin-right: 0; }
+  #main-content h2 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 50px; }
+    #main-content h2:last-child {
+      margin-right: 0; }
+  #main-content .scroll {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 51.17883%;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2.5em;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    padding: 0.25em; }
+    #main-content .scroll:last-child {
+      margin-right: 0; }
+
+.img-circle {
+  border-radius: 50%; }
+
+#projects {
+  padding: 10px; }
+  #projects .content {
+    *zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    #projects .content:before, #projects .content:after {
+      content: " ";
+      display: table; }
+    #projects .content:after {
+      clear: both; }
+    #projects .content #signature {
+      *zoom: 1;
+      display: block; }
+      #projects .content #signature:before, #projects .content #signature:after {
+        content: " ";
+        display: table; }
+      #projects .content #signature:after {
+        clear: both; }
+      #projects .content #signature .signature {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        #projects .content #signature .signature:last-child {
+          margin-right: 0; }
+        #projects .content #signature .signature h3 {
+          color: #F3EDDD;
+          font-size: 2em;
+          margin: 0 0 10px 0; }
+          #projects .content #signature .signature h3 .badge {
+            padding: 0.4em;
+            font-size: 0.4em;
+            font-weight: normal;
+            border-radius: 0.6em;
+            margin: 0 0 0 5px;
+            background: #b55b52; }
+        #projects .content #signature .signature .label {
+          border-radius: 0.25em;
+          background: #5cb85c;
+          padding: .2em .6em .3em;
+          font-size: 0.75em;
+          color: #fff; }
+        #projects .content #signature .signature .signature-panel .panel-body {
+          border-top-left-radius: 0.3em;
+          border-top-right-radius: 0.3em;
+          height: 70%;
+          padding: 10px;
+          background: #F3EDDD; }
+          #projects .content #signature .signature .signature-panel .panel-body img {
+            max-width: 100%;
+            height: auto; }
+        #projects .content #signature .signature .signature-panel .panel-footer {
+          padding: 10px;
+          border-bottom-left-radius: 0.3em;
+          border-bottom-right-radius: 0.3em;
+          background: #CFF4FF;
+          height: 30%; }
+  #projects .other {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 20px 0; }
+    #projects .other:last-child {
+      margin-right: 0; }
+    #projects .other dl {
+      list-style: none;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      color: #ffeeff;
+      font-weight: normal;
+      border: 1px solid rgba(153, 149, 149, 0.7);
+      border-radius: 0.3em;
+      background: #3a7167; }
+      #projects .other dl:last-child {
+        margin-right: 0; }
+      #projects .other dl:nth-child(3n) {
+        margin-right: 0; }
+      #projects .other dl:nth-child(3n+1) {
+        clear: left; }
+      #projects .other dl dt {
+        border-bottom: 1px solid rgba(153, 149, 149, 0.7);
+        font-size: 1.3em;
+        color: #eee;
+        padding: 20px 10px;
+        text-align: center; }
+      #projects .other dl dd {
+        padding: 10px;
+        margin: 0; }
+        #projects .other dl dd b {
+          font-size: 0.9em;
+          line-height: 1.2em;
+          color: #999595; }
+      #projects .other dl dd.links {
+        border-top: 1px solid rgba(153, 149, 149, 0.7);
+        background: #cff4ff;
+        height: 20%;
+        color: #b55b52;
+        text-align: center;
+        border-bottom-left-radius: 0.3em;
+        border-bottom-right-radius: 0.3em; }
+        #projects .other dl dd.links a {
+          color: #b55b52;
+          font-size: 1.2em;
+          text-decoration: none; }
+
+#dev .contributions {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #dev .contributions:before, #dev .contributions:after {
+    content: " ";
+    display: table; }
+  #dev .contributions:after {
+    clear: both; }
+  #dev .contributions div.section {
+    background: rgba(153, 149, 149, 0.7);
+    *zoom: 1;
+    display: block;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 20px 0; }
+    #dev .contributions div.section:before, #dev .contributions div.section:after {
+      content: " ";
+      display: table; }
+    #dev .contributions div.section:after {
+      clear: both; }
+    #dev .contributions div.section:last-child {
+      margin-right: 0; }
+    #dev .contributions div.section h2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #dev .contributions div.section h2:last-child {
+        margin-right: 0; }
+    #dev .contributions div.section .projects {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      #dev .contributions div.section .projects:last-child {
+        margin-right: 0; }
+      #dev .contributions div.section .projects dl {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 82.52847%;
+        border-bottom: 1px solid #ddd;
+        margin: 20px 0 0; }
+        #dev .contributions div.section .projects dl:last-child {
+          margin-right: 0; }
+        #dev .contributions div.section .projects dl.last {
+          border-bottom: none; }
+        #dev .contributions div.section .projects dl dt {
+          text-align: center;
+          color: #b55b52;
+          margin: 0 0 10px 0;
+          font-size: 1.4em; }
+          #dev .contributions div.section .projects dl dt a {
+            color: #b55b52;
+            text-decoration: none; }
+            #dev .contributions div.section .projects dl dt a:hover {
+              text-decoration: underline; }
+        #dev .contributions div.section .projects dl dd {
+          text-align: center;
+          margin: 0 0 20px; }
+
+#leisure .container {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #leisure .container:before, #leisure .container:after {
+    content: " ";
+    display: table; }
+  #leisure .container:after {
+    clear: both; }
+#leisure .leisure-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%; }
+  #leisure .leisure-content:last-child {
+    margin-right: 0; }
+#leisure .activity {
+  margin: 10px 40px;
+  color: #fff; }
+  #leisure .activity .activity-body {
+    margin: 0 70px; }
+  #leisure .activity .media-heading {
+    margin-bottom: 10px;
+    font-size: 2em; }
+  #leisure .activity .media-body p {
+    font-size: 1.1em; }
+#leisure hr {
+  margin: 25px 40px;
+  border-top: 1px solid rgba(131, 156, 194, 0.7); }
+#leisure .image-circle {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background: #ccc;
+  float: left; }
+  #leisure .image-circle img {
+    margin: 3px; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
