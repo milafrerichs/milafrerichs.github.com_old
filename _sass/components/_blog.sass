@@ -1,0 +1,21 @@
+#blog
+  padding: 60px 0 0
+  overflow: auto
+  #sidebar
+    @include span-columns(2)
+    background: rgba(181, 91, 82, 1)
+    position: fixed
+    height: 100%
+    h1
+      font-size: 2em
+    h2
+      font-size: 1.5em
+    #me
+      background: none
+      img
+        width: 7em
+    #nav
+      margin: 10px 0
+  #posts
+    @include span-columns(10)
+    @include shift(2)
