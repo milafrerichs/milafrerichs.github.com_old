@@ -1,0 +1,38 @@
+#contribution
+  background: url('../assets/images/theatre.png')
+  background-size: cover
+  .contribution-container
+    @include outer-container()
+    padding: 10px
+    margin-top: 1em
+    .contributions
+      background: rgba(153, 149, 149, 0.8)
+      box-shadow: 0 2px 4px darken(#bbb, 40)
+      @include span-columns(6)
+      h3
+        font-size: 2.2em
+        border-bottom: 1px solid rgba(91, 88, 88, 0.4)
+        margin-bottom: 0.5em
+      .contribution
+        $comment-gutter: 1.4em
+        $comment-image-padding: 0.7em
+        $comment-image-width: 4em
+        $comment-color: $base-font-color
+        $comment-background: lighten($base-accent-color, 15)
+        $comment-detail-color: transparentize($comment-color, 0.5)
+        $comment-image-vert-alignment: top
+        display: table
+        width: 100%
+        margin-bottom: $base-line-height
+        padding-bottom: 1em
+        border-bottom: 1px solid transparentize($comment-color, 0.9)
+        .contribution-content
+          display: table-cell
+          vertical-align: $comment-image-vert-alignment
+          width: 100%
+          .contribution-detail
+            font-style: italic
+            font-size: .9em
+            color: $comment-detail-color
+            &:before
+              padding: 0 5px

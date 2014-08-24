@@ -1,0 +1,40 @@
+#leisure
+  @include outer-container()
+  .activities
+    @include span-columns(6)
+    @include shift(3)
+    .activity
+      text-align: left
+      $comment-gutter: 1.4em
+      $comment-image-padding: 0.7em
+      $comment-image-width: 4em
+      $comment-color: $base-font-color
+      $comment-background: lighten($base-accent-color, 15)
+      $comment-detail-color: transparentize($comment-color, 0.5)
+      $comment-image-vert-alignment: top
+      display: table
+      width: 100%
+      margin-bottom: $base-line-height
+      padding-bottom: 1em
+      border-bottom: 1px solid transparentize($comment-color, 0.9)
+      .activity-content, .activity-image
+        display: table-cell
+        vertical-align: $comment-image-vert-alignment
+      .activity-content
+        width: 100%
+        padding-left: 15px
+        .activity-detail
+          font-style: italic
+          font-size: .9em
+          color: $comment-detail-color
+          &:before
+            padding: 0 5px
+      .activity-image
+        border-radius: 50em
+
+        > img
+          height: auto
+          border-radius: $base-border-radius
+          padding: $comment-image-padding
+          display: block
+          max-width: none

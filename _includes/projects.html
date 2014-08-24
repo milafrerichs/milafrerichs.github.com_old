@@ -1,54 +1,87 @@
-<section id="projects" class="vertical-wrapper" >
-    <div class="content">
-      <h1 data-appear-top-offset="200">Projects</h1>
-      <div id="signature">
-        <div class="signature">
-          <h3>Offener Rat Münster<span class="badge">beta</span></h3>
-          <div class="signature-panel">
-            <div class="panel-body">
-              <img src="/assets/images/offenerrat.png" class="img-responsive img-thumbnail" alt="Offener Rat"/>
-            </div>
-            <div class="panel-footer">
-              <span class="label label-success">Ruby on Rails</span>
-              <span class="label label-info">CoffeeScript</span>
-            </div>
-          </div>
+<a name='projects'></a>
+<div id='projects'>
+  <h1>Projects</h1>
+  <div class='signature-projects'>
+    <div id='offener-rat'>
+      <div class='device-background'>
+        <div class='device-text'>
+          <h4>Offener Rat Münster</h4>
+          <p>Ruby on Rails</p>
+          <button>Visit</button>
         </div>
-        <div class="signature">
-          <h3>Infrastructure San Diego<span class="badge">in Development</span></h3>
-          <div class="signature-panel">
-            <div class="panel-body">
-              <img src="/assets/images/infrastructure.png" class="img-responsive img-thumbnail" alt="Offener Rat"/>
+        <div class='browsers'>
+          <div class='browser'>
+            <div class='browser-top-bar'>
+              <div class='browser-circle'></div>
+              <div class='browser-circle'></div>
+              <div class='browser-circle'></div>
             </div>
-            <div class="panel-footer">
-              <span class="label label-success">Python</span>
-              <span class="label label-info">Django</span>
-            </div>
+            <div class='browser-content'></div>
           </div>
         </div>
       </div>
-  <div class="other">
-    {% for project in site.projects %}
-      <dl>
-        <dt>{{project.title}}</dt>
-        <dd>{{project.description}}</dd>
-        <dd><b>Technologies:</b> {{project.technology}}</dd>
-        <dd><b>Language:</b> {{project.language}}</dd>
-        <dd><b>Year:</b> {{project.year}}</dd>
-        <dd class="links">
-          {% if project.github %}
-          <a href="{{project.github}}" target="_blank" class="icon-github3" data-icon="&#e78a;">
-              <span class="visuallyhidden">Github</span>
-            </a>
-          {% endif %}
-          {% if project.url %}
-            <a href="{{project.url}}" target="_blank" class="icon-earth" data-icon="&#e6c2;">
-              <span class="visuallyhidden">Github</span>
-            </a>
-          {% endif %}
-        </dd>
-      </dl>
-      {% endfor %}
+    </div>
+    <div id='infrastructure'>
+      <div class='device-background'>
+        <div class='device-text'>
+          <h4>Infratructure San Diego</h4>
+          <p>Django</p>
+          <button>Visit</button>
+        </div>
+        <div class='browsers'>
+          <div class='browser'>
+            <div class='browser-top-bar'>
+              <div class='browser-circle'></div>
+              <div class='browser-circle'></div>
+              <div class='browser-circle'></div>
+            </div>
+            <div class='browser-content'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='cards'>
+    {% for project in site.data.projects %}
+    <div class='card'>
+      <div class='ribbon-wrapper'>
+        <div class='ribbon'>
+          {{project.language}}
+        </div>
+      </div>
+      <div class='card-header'>
+        {{project.title}}
+      </div>
+      <div class='card-copy'>
+        <p>{{project.description}}</p>
+      </div>
+      <div class='card-stats'>
+        <ul>
+          {% for technology in project.technologies %}
+          <li>
+            {{technology}}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class='card-link'>
+        <a class='octicon octicon-octoface' href='{{project.github}}'>
+          GitHub
+        </a>
+        {% if project.url %}
+        <a class='octicon octicon-globe' href='{{project.url}}'>
+          Preview
+        </a>
+        {% endif %}
+      </div>
+      <div class='card-year'>
+        <div class='badges'>
+          <div class='badge year'>
+            {{project.year}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
-</section>

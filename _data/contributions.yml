@@ -1,0 +1,21 @@
+- title: Civic
+  id: civic
+  contributions:
+  - title: Code for America
+    url: https://github.com/codeforamerica/brigade
+    description: Online hub for Code for America Brigade Members
+  - title: Code for Hampton Roads Landingpage
+    url: https://github.com/c4hrva/c4hrva-landing
+    description: Landing page for Code for Hampton Roads, GitHub Pages
+  - title: Code for San Diego Landingpage
+    url: https://github.com/codeforsandiego/codeforsandiego.github.com
+    description: Landing page for Code for San Diego
+- title: Other
+  id: other
+  contributions:
+  - title: letsfreckle-client
+    url: https://github.com/ryanlecompte/letsfreckle-client
+    description: "Ruby client for the Let's Freckle API"
+  - title: ReadItLater-Calibre-Plugin
+    url: https://github.com/tbunnyman/ReadItLater-Calibre-Plugin
+    description: An updated &amp; modified version of the official Calibre plugin for Pocket (Formerly ReadItLater)

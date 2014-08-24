@@ -1,0 +1,15 @@
+%a(name="contributions")
+#contribution
+  %h1 Contributions
+  .contribution-container
+    {% for contributionType in site.data.contributions %}
+    .contributions
+      %h3 {{contributionType.title}}
+      {% for contribution in contributionType.contributions %}
+      .contribution
+        .contribution-content
+          %h5 {{contribution.title}}
+          %p {{contribution.description}}
+          %a.contribution-detail.octicon.octicon-octoface(href="{{contribution.url}}") GitHub
+      {% endfor %}
+    {% endfor %}

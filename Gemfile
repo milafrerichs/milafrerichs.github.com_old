@@ -1,4 +1,10 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gem 'jekyll'
-gem 'rdiscount'
+gem 'rake'
+gem 'github-pages'
+
+gem 'haml'
+
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'
