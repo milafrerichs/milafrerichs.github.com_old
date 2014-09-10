@@ -1,0 +1,20 @@
+\---
+\layout: payment
+\title: Pay me
+\---
+
+#pay-me
+  %h2 Pay Me
+  %form
+    %label(for="amount") Amount in Euro:
+    %input(type="text" name="amount" id="amount" value="")
+    %label(for="description") Description
+    %input(type="text" name="description" id="description" value="")
+    %button(id="customButton") Pay me!
+
+  #thank-you
+    %p
+      Thank you
+      #email
+      for your payment
+
