@@ -1,0 +1,15 @@
+%a(name="projects")
+#projects
+  %h3 Recent Work
+  %ul.projects
+    {% for project in site.data.projects limit: 5 %}
+    %li
+      {{project.title}}
+      %a.octicon.octicon-octoface(href="{{project.github}}")
+        GitHub
+      {% if project.url %}
+      %a.octicon.octicon-globe(href="{{project.url}}")
+        Preview
+      {% endif %}
+      {{project.year}}
+    {% endfor %}

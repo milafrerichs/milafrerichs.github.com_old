@@ -1,0 +1,13 @@
+<a name='projects'></a>
+<div id='talks'>
+  <h3>Recent Talks</h3>
+  <ul class='talks'>
+    {% for talk in site.data.talks %}
+    <li>
+      {{talk.title}},
+      {{talk.venue}},
+      {{talk.year}}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

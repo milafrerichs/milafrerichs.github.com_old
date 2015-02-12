@@ -1,0 +1,10 @@
+%a(name="projects")
+#talks
+  %h3 Recent Talks
+  %ul.talks
+    {% for talk in site.data.talks %}
+    %li
+      {{talk.title}},
+      {{talk.venue}},
+      {{talk.year}}
+    {% endfor %}
