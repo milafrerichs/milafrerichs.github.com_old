@@ -1,0 +1,28 @@
+#cv
+  margin-bottom: 2em
+  @include media($mobile)
+    padding: 1em
+  img
+    width: 8em
+    margin: 0 auto
+    display: block
+    border-radius: 5em
+  h3
+    text-shadow: 1px 1px rgba(245,245,245,.8)
+    color: #747474
+    margin: 1.5em 0 0.5em
+  .experience
+    h4
+      font-weight: normal
+  h5
+    color: #777
+  .social
+    margin-top: 0.5em
+    margin-bottom: 0.5em
+    @include span-columns(8)
+    @include shift(4)
+    +clearfix
+    li
+      float: left
+      font-size: 1.5em
+      margin: 0 1em
