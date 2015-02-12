@@ -1,20 +1,12 @@
 <a name='contributions'></a>
 <div id='contribution'>
-  <h1>Contributions</h1>
-  <div class='contribution-container'>
-    {% for contributionType in site.data.contributions %}
-    <div class='contributions'>
-      <h3>{{contributionType.title}}</h3>
-      {% for contribution in contributionType.contributions %}
-      <div class='contribution'>
-        <div class='contribution-content'>
-          <h5>{{contribution.title}}</h5>
-          <p>{{contribution.description}}</p>
-          <a class='contribution-detail octicon octicon-octoface' href='{{contribution.url}}'>GitHub</a>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+  <h3>Contributions</h3>
+  <ul>
+    {% for contribution in site.data.contributions %}
+    <li>
+      {{contribution.title}}
+      <a class='octicon octicon-octoface' href='{{contribution.url}}'>GitHub</a>
+    </li>
     {% endfor %}
-  </div>
+  </ul>
 </div>

@@ -1,14 +1,10 @@
 #me
-  position: relative
-  background: url('../assets/images/gaslamp.png') no-repeat
   background-size: cover
-  img
-    -webkit-border-radius: 50em
-    -moz-border-radius: 50em
-    border-radius: 50em
-    width: 200px
-    margin: 20px
   h1
-    padding: 40px
-  h2
     padding: 20px
+    @include media($mobile)
+      padding: 10px
+  h2
+    padding: 10px
+    @include media($mobile)
+      padding: 5px

@@ -1,3 +1,34 @@
+- title: Bürgerbüro Wartezeiten API
+  technologies:
+    - Sinatra
+    - Wombat
+  language: Ruby
+  year: Jan 2015
+- title: Wahllokal API
+  technologies:
+    - Sinatra
+    - ScraperWiki
+  language: Ruby
+  year: Dez 2014
+- title: Wahlkarte
+  technologies:
+    - d3
+  language: JavaScript
+  year: Sept 2014
+- title: Offener Haushalt Münster
+  technologies:
+    - OpenRefine
+    - R
+    - OpenSpending
+  year: Okt 2014
+- title: Offener Rat Münster
+  description: Ratsinformationssystem
+  technologies:
+    - Ruby on Rails
+  language: Ruby
+  year: 2013
+- title: Infrastructure San Diego
+  year: 2013
 - title: Bike Accidents Visualisation
   description: A d3 visualisation of bike accidents in Germany
   technologies:

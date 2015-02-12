@@ -4,8 +4,16 @@ layout: default
 ---
 <div class='home'>
   {% include me.html %}
-  {% include projects.html %}
-  {% include contribution.html %}
-  {% include places.html %}
-  {% include leisure.html %}
+  {% include social.html %}
+  <div class='boxes'>
+    <div class='box'>
+      {% include work.html %}
+    </div>
+    <div class='box'>
+      {% include talks.html %}
+    </div>
+    <div class='box'>
+      {% include contribution.html %}
+    </div>
+  </div>
 </div>

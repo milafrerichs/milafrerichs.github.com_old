@@ -1,0 +1,20 @@
+<a name='projects'></a>
+<div id='projects'>
+  <h3>Recent Work</h3>
+  <ul class='projects'>
+    {% for project in site.data.projects limit: 5 %}
+    <li>
+      {{project.title}}
+      <a class='octicon octicon-octoface' href='{{project.github}}'>
+        GitHub
+      </a>
+      {% if project.url %}
+      <a class='octicon octicon-globe' href='{{project.url}}'>
+        Preview
+      </a>
+      {% endif %}
+      {{project.year}}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
