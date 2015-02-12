@@ -1,4 +1,9 @@
 %ul.social
+  {% if page.include_home %}
+  %li
+    %a(href="http://milafrerichs.de")
+      %i.fa.fa-globe
+  {% endif %}
   %li
     %a(href="http://github.com/milafrerichs" target="_blank")
       %i.fa.fa-github
