@@ -1,0 +1,48 @@
+\---
+\layout: default
+\include_home: yes
+\---
+#cv
+  %h1 Mila Frerichs
+  %img.me(src="{{site.baseurl}}/assets/images/mf.jpeg" )
+  %h2
+    Developer, Civic Hacker
+    %br
+    Geo- &amp; Data-Geek
+  {% include social.html %}
+  %h3 About me
+  %p I'm a Developer from Münster, Germany and started my own company 'Civic Vision' half a year ago.
+  %p I started Civic Vision to work more on my own projects and work in the field I like the most: Civic Tech. 
+  %p 
+  %h3 Projects
+  %p A short overview of my projects, some are private projects, some open source contributions, other are client projects.
+
+  %h4 Mapping
+  .cards
+    {% for project in site.data.mapping_projects %}
+    .card
+      .ribbon-wrapper
+        .ribbon
+          {{project.year}}
+      .card-header
+        %a(href="{{project.url}}")
+          {{project.title}}
+      .card-image
+        {% if project.image %}
+        %img(src="{{project.image}}")
+        {% endif %}
+      .card-copy
+        %p
+          {{project.copy}}
+      .card-link
+        %a.octicon.octicon-octoface(href="http://github.com/{{project.github}}")
+          GitHub
+        %a.octicon.octicon-globe(href="{{project.url}}")
+          Site
+      .card-year
+        .badges
+          {% for technology in project.technologies %}
+          .badge(class="{{technology.class}}")
+            {{technology.name}}
+          {% endfor %}
+    {% endfor %}

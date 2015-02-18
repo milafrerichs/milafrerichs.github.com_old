@@ -1,0 +1,56 @@
+- title: Parking garage finder
+  copy: "Find the nearest parking garage in Münster on a mobile friendly map."
+  github: codeformuenster/parkhaeuser-mobile
+  url: http://codeformuenster.org/parkhaeuser-mobile
+  image: '/assets/images/parking_garage_map.png'
+  year: 2015
+  technologies:
+    - name: mapbox.js
+      class: frontend
+    - name: turf.js
+      class: frontend
+- title: Infrastructure San Diego
+  copy: "Django based Information Portal on Capital Improvement Projects of the City of San Diego.
+        In cooperation with the San Diego Council Infrastructure Committee."
+  github: codeforsandiego/infrastructure
+  url: http://infrastructure.opensandiego.org
+  image: '/assets/images/infrastructure_map.png'
+  year: 2014
+  technologies:
+    - name: Django
+      class: backend
+    - name: mapbox.js
+      class: frontend
+- title: Election Map
+  copy: "An election map for the local Council election in Münster, Germany 2014. With live results during the election"
+  github: codeformuenster/wahlkarte
+  url: http://codeformuenster.org/wahlkarte
+  image: '/assets/images/election_map.png'
+  year: 2014
+  technologies:
+    - name: d3
+      class: frontend
+    - name: underscore.js
+      class: frontend
+- title: Armsexport Map
+  copy: "Remake of a map about german arms export. Client project for the OKF."
+  github: okfde/armsexport-map
+  url: http://okfde.github.io/armsexport-map/
+  image: '/assets/images/armsexport_map.png'
+  year: 2014
+  technologies:
+    - name: middleman
+      class: backend
+    - name: knockout.js
+      class: frontend
+    - name: underscore.js
+      class: frontend
+- title: Bicycle Accidents in Germany
+  copy: An overview of bike accidents in Germany by state.
+  github: milafrerichs/fahrradunfaelle
+  url: http://milafrerichs.de/fahrradunfaelle
+  image: '/assets/images/accidents_map.png'
+  year: 2013
+  technologies:
+    - name: d3
+      class: frontend
