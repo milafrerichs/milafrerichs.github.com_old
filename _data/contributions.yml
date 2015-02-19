@@ -1,3 +1,9 @@
+- title: GeoNode
+  url: https://github.com/GeoNode/geonode
+- title: SimplerTiles
+  url: https://github.com/propublica/simpler-tiles
+- title: GeoGit Ruby
+  url: https://github.com/scooterw/geogit-ruby
 - title: Code for America
   url: https://github.com/codeforamerica/brigade
   description: Online hub for Code for America Brigade Members
