@@ -2,7 +2,7 @@
 #projects
   %h3 Recent Work
   %ul.projects
-    {% for project in site.data.projects limit: 5 %}
+    {% for project in site.data.projects.short limit: 5 %}
     %li
       {{project.title}}
       %a.octicon.octicon-octoface(href="{{project.github}}")
