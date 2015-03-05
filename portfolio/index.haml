@@ -1,0 +1,102 @@
+\---
+\layout: default
+\include_home: yes
+\---
+#axismaps
+  %h1 Mila Frerichs
+  %img.me(src="{{site.baseurl}}/assets/images/mf.jpeg" )
+  %h2
+    Developer, Civic Hacker
+    %br
+    Geo- &amp; Data-Geek
+  {% include social.html %}
+  %h3 About me
+  %p I'm a software developer from Münster, Germany and started my own company 'Civic Vision' mid 2014. With my company I want to help non-profits and governments make better use of their data, tap their full potential and help them create meaningful and creative maps and visualizations.
+  %h3 Testimonial
+  .testimonials
+    .testimonial
+      %blockquote.testimonial-text
+        %p Mila and I worked together on the CIP Civic Engagement App for the Council Infrastructure Committee with CM Mark Kersey. He proved himself to be an excellent and detail oriented developer with a strong grasp on both the fundamentals of iterative test driven development and automated deployment as well user centric design. He brings a broad range of skills in other areas to the table that would benefit any project or initiative. It was my pleasure to work with him and look forward to collaborating on other projects in the future.
+      .testimonial-author
+        %a(href="http://www.linkedin.com/in/ortelius/")Jeffrey Johnson, Senior Software Engineer
+
+  %h3 Projects
+  %h4 Mapping
+  .cards
+    {% for project in site.data.mapping_projects %}
+    .card
+      .ribbon-wrapper
+        .ribbon
+          {{project.year}}
+      .card-header
+        %a(href="{{project.url}}")
+          {{project.title}}
+      .card-image
+        {% if project.image %}
+        %img(src="{{project.image}}")
+        {% endif %}
+      .card-copy
+        %p
+          {{project.copy}}
+      .card-link
+        %a.octicon.octicon-octoface(href="http://github.com/{{project.github}}")
+          GitHub
+        %a.octicon.octicon-globe(href="{{project.url}}")
+          Site
+      .card-year
+        .badges
+          {% for technology in project.technologies %}
+          .badge(class="{{technology.class}}")
+            {{technology.name}}
+          {% endfor %}
+    {% endfor %}
+  %h4 APIs
+  .cards
+    {% for project in site.data.projects.apis %}
+    .card
+      .ribbon-wrapper
+        .ribbon
+          {{project.year}}
+      .card-header
+        %a(href="{{project.url}}")
+          {{project.title}}
+      .card-copy
+        %p
+          {{project.copy}}
+      .card-link
+        %a.octicon.octicon-octoface(href="http://github.com/{{project.github}}")
+          GitHub
+        %a.octicon.octicon-globe(href="{{project.url}}")
+          Site
+      .card-year
+        .badges
+          {% for technology in project.technologies %}
+          .badge(class="{{technology.class}}")
+            {{technology.name}}
+          {% endfor %}
+    {% endfor %}
+  %h4 Other Projects
+  .cards
+    {% for project in site.data.projects.other %}
+    .card
+      .ribbon-wrapper
+        .ribbon
+          {{project.year}}
+      .card-header
+        %a(href="{{project.url}}")
+          {{project.title}}
+      .card-copy
+        %p
+          {{project.copy}}
+      .card-link
+        %a.octicon.octicon-octoface(href="http://github.com/{{project.github}}")
+          GitHub
+        %a.octicon.octicon-globe(href="{{project.url}}")
+          Site
+      .card-year
+        .badges
+          {% for technology in project.technologies %}
+          .badge(class="{{technology.class}}")
+            {{technology.name}}
+          {% endfor %}
+    {% endfor %}
