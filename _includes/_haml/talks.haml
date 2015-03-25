@@ -4,7 +4,17 @@
   %ul.talks
     {% for talk in site.data.talks %}
     %li
+      {% if talk.url %}
+      %a(href="{{talk.url}}" target="_blank")
+        {{talk.title}},
+      {% else %}
       {{talk.title}},
+      {% endif %}
       {{talk.venue}},
       {{talk.year}}
+      {% if talk.video %}
+      %a(href="{{talk.video}}" target="_blank")
+        %i.fa.fa-video-camera
+      {% endif %}
+
     {% endfor %}
