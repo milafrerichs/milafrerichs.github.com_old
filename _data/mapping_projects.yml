@@ -1,3 +1,13 @@
+- title: Simple Tile Server
+  copy: "A simple Tile Server from shp files made with the awesome SimplerTiles gem."
+  technologies:
+    - name: SimplerTiles
+      class: backend
+    - name: Sinatra
+      class: backend
+  language: Ruby
+  year: 2015
+  github: https://github.com/milafrerichs/simpler-tiles-examples
 - title: Parking garage finder
   copy: "Find the nearest parking garage in Münster on a mobile friendly map."
   github: codeformuenster/parkhaeuser-mobile
