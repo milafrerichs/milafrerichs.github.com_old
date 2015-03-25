@@ -1,35 +1,47 @@
 short:
+  - title: Simple Tile Server
+    technologies:
+      - SimplerTiles
+    language: Ruby
+    year: March 2015
+    github: https://github.com/milafrerichs/simpler-tiles-examples
   - title: Bürgerbüro Wartezeiten API
     technologies:
       - Sinatra
       - Wombat
     language: Ruby
     year: Jan 2015
+    github: https://github.com/codeformuenster/buergerbuero
   - title: Wahllokal API
     technologies:
       - Sinatra
       - ScraperWiki
     language: Ruby
     year: Dez 2014
+    github: https://github.com/codeformuenster/poll-finder
   - title: Wahlkarte
     technologies:
       - d3
     language: JavaScript
     year: Sept 2014
+    github: https://github.com/codeformuenster/wahlkarte
   - title: Offener Haushalt Münster
     technologies:
       - OpenRefine
       - R
       - OpenSpending
     year: Okt 2014
+    github: https://github.com/codeformuenster/haushalt-muenster
   - title: Offener Rat Münster
     description: Ratsinformationssystem
     technologies:
       - Ruby on Rails
     language: Ruby
     year: 2013
+    github: https://github.com/codeformuenster/offenerrat-ms
   - title: Infrastructure San Diego
     year: 2013
+    github: https://github.com/opensandiego/infrastructure
   - title: Bike Accidents Visualisation
     description: A d3 visualisation of bike accidents in Germany
     technologies:
@@ -83,6 +95,15 @@ short:
     year: Jul 2011
     github: https://github.com/milafrerichs/TeamPlugin
 mapping:
+  - title: Simple Tile Server
+    technologies:
+      - name: SimplerTiles
+        class: backend
+      - name: Sinatra
+        class: backend
+    language: Ruby
+    year: March 2015
+    github: https://github.com/milafrerichs/simpler-tiles-examples
   - title: Parking garage finder
     copy: "Find the nearest parking garage in Münster on a mobile friendly map."
     github: codeformuenster/parkhaeuser-mobile
