@@ -4,9 +4,20 @@
   <ul class='talks'>
     {% for talk in site.data.talks %}
     <li>
+      {% if talk.url %}
+      <a href='{{talk.url}}' target='_blank'>
+        {{talk.title}},
+      </a>
+      {% else %}
       {{talk.title}},
+      {% endif %}
       {{talk.venue}},
       {{talk.year}}
+      {% if talk.video %}
+      <a href='{{talk.video}}' target='_blank'>
+        <i class='fa fa-video-camera'></i>
+      </a>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
