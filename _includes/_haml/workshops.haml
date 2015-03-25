@@ -1,0 +1,20 @@
+%a(name="projects")
+#workshops
+  %h3 Recent Workshops
+  %ul.workshops
+    {% for workshop in site.data.workshops %}
+    %li
+      {% if workshop.url %}
+      %a(href="{{workshop.url}}" target="_blank")
+        {{workshop.title}},
+      {% else %}
+      {{workshop.title}},
+      {% endif %}
+      {{workshop.venue}},
+      {{workshop.year}}
+      {% if workshop.video %}
+      %a(href="{{workshop.video}}" target="_blank")
+        %i.fa.fa-video-camera
+      {% endif %}
+
+    {% endfor %}
