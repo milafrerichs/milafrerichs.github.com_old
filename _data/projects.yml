@@ -5,6 +5,9 @@ short:
     language: Ruby
     year: March 2015
     github: https://github.com/milafrerichs/simpler-tiles-examples
+  - title: Failed Bank Tracker
+    year: Feb 2015
+    github: https://github.com/milafrerichs/failed-bank-tracker-map
   - title: Bürgerbüro Wartezeiten API
     technologies:
       - Sinatra
