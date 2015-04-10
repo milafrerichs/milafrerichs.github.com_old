@@ -1,3 +1,18 @@
+- title: Failed Bank Tracker
+  copy: "Failed Banks in Europe with the Open Economics workgroup of the Open Knowledge Foundation"
+  image: '/assets/images/failed-bank-tracker.png'
+  technologies:
+    - name: d3
+      class: frontend
+    - name: handlebars
+      class: frontend
+    - name: middleman
+      class: backend
+    - name: cartodb
+      class: backend
+  language: Javscript
+  year: Feb 2015
+  github: https://github.com/milafrerichs/failed-bank-tracker-map/
 - title: Simple Tile Server
   copy: "A simple Tile Server from shp files made with the awesome SimplerTiles gem."
   technologies:
