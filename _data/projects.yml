@@ -1,4 +1,20 @@
 short:
+  - title: Child Care Support
+    copy: "Visualization about German Child Care support"
+    image: '/assets/images/betreuungsgeld.png'
+    technologies:
+      - d3
+    year: Apr 2015
+    github: https://github.com/civicvision/betreuungsgeld
+    url: http://civicvision.de/betreuungsgeld
+  - title: Failed Bank Tracker
+    copy: "Failed Banks in Europe with the Open Economics workgroup of the Open Knowledge Foundation"
+    image: '/assets/images/failed-bank-tracker.png'
+    technologies:
+      - d3
+    year: Feb 2015
+    github: https://github.com/milafrerichs/failed-bank-tracker-map
+    url: http://milafrerichs.de/failed-bank-tracker-map
   - title: Simple Tile Server
     technologies:
       - SimplerTiles
@@ -25,6 +41,8 @@ short:
     language: JavaScript
     year: Sept 2014
     github: https://github.com/codeformuenster/wahlkarte
+    link: https://codeformuenster.org/wahlkarte
+    image: '/assets/images/election_map.png'
   - title: Offener Haushalt Münster
     technologies:
       - OpenRefine
@@ -52,6 +70,7 @@ short:
     year: Feb. 2013
     github: http://github.com/milafrerichs/fahrradunfaelle
     url: http://milafrerichs.github.io/fahrradunfaelle/
+    image: '/assets/images/accidents_map.png'
   - title: Renewable Energy Act Visualisation
     description: A d3 visualisation
     technologies:
@@ -95,6 +114,22 @@ short:
     year: Jul 2011
     github: https://github.com/milafrerichs/TeamPlugin
 mapping:
+  - title: Failed Bank Tracker
+    copy: "Failed Banks in Europe with the Open Economics workgroup of the Open Knowledge Foundation"
+    image: '/assets/images/failed-bank-tracker.png'
+    technologies:
+      - name: d3
+        class: frontend
+      - name: handlebars
+        class: frontend
+      - name: middleman
+        class: backend
+      - name: cartodb
+        class: backend
+    language: Javscript
+    year: Feb 2015
+    github: https://github.com/milafrerichs/failed-bank-tracker-map/
+    url: http://milafrerichs.de/failed-bank-tracker-map/
   - title: Simple Tile Server
     technologies:
       - name: SimplerTiles
