@@ -1,6 +1,6 @@
 ---
 title: Open Budget Münster
-copy: "AN Open Budget visuliazation for the city of Münster. "
+copy: "An Open Budget visuliazation for the city of Münster. "
 year: Okt 2014
 date: 201410
 what: ""
