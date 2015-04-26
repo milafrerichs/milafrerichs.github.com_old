@@ -1,0 +1,14 @@
+---
+layout: default
+include_home: yes
+---
+{% assign what = "mapping" %}
+<div id='projects'>
+  {% include social.html %}
+  <h3>Mapping Projects</h3>
+  <div class='cards'>
+    {% if what %}
+    {% include _what_projects.html %}
+    {% endif %}
+  </div>
+</div>
