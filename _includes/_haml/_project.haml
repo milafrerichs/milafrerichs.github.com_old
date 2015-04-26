@@ -4,7 +4,8 @@
     .ribbon
       {{project.year}}
   .card-header
-    %a(href="{{project.link}}" target="_blank")
+    {% assign language = site.data.languages | where: 'name', project.language | first %}
+    %a.devicons(class="devicons-{{language.class}}" href="{{project.link}}" target="_blank")
       {{project.title}}
   .card-image
     {% if project.image %}

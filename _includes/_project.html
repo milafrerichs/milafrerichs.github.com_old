@@ -6,7 +6,8 @@
     </div>
   </div>
   <div class='card-header'>
-    <a href='{{project.link}}' target='_blank'>
+    {% assign language = site.data.languages | where: 'name', project.language | first %}
+    <a class='devicons devicons-{{language.class}}' href='{{project.link}}' target='_blank'>
       {{project.title}}
     </a>
   </div>
