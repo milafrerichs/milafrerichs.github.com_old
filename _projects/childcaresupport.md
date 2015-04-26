@@ -3,7 +3,7 @@ title: Child Care Support
 copy: "Visualization about German Child Care support"
 image: '/assets/images/betreuungsgeld.png'
 what: visualization
-language: JavaScript
+language: Javascript
 year: Apr 2015
 date: 201504
 github: https://github.com/civicvision/betreuungsgeld

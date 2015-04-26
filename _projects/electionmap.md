@@ -4,7 +4,7 @@ copy: "An election map for the local Council election in Münster, Germany 2014.
 technologies:
   - d3
   - Jekyll
-language: JavaScript
+language: Javascript
 what: mapping
 year: Sept 2014
 date: 201409

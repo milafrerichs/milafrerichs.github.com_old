@@ -7,6 +7,7 @@ image: '/assets/images/armsexport_map.png'
 year: 2014
 date: 201408
 what: "mapping"
+language: "Javascript"
 technologies:
   - middleman
   - knockout.js
