@@ -6,80 +6,17 @@
   {% include social.html %}
   %h3 Projects
   .cards
-    {% for project in site.data.mapping_projects %}
-    .card
-      .ribbon-wrapper
-        .ribbon
-          {{project.year}}
-      .card-header
-        %a(href="{{project.url}}")
-          {{project.title}}
-      .card-image
-        {% if project.image %}
-        %img(src="{{project.image}}")
-        {% endif %}
-      .card-copy
-        %p
-          {{project.copy}}
-      .card-link
-        %a.octicon.octicon-octoface(href="http://github.com/{{project.github}}")
-          GitHub
-        %a.octicon.octicon-globe(href="{{project.url}}")
-          Site
-      .card-year
-        .badges
-          {% for technology in project.technologies %}
-          .badge(class="{{technology.class}}")
-            {{technology.name}}
-          {% endfor %}
+    {% assign sorted_projects = (site.projects | sort: 'date' | reverse) %}
+    {% for project in sorted_projects %}
+    {% include _project.html project=project %}
     {% endfor %}
   %h4 APIs
   .cards
     {% for project in site.data.projects.apis %}
-    .card
-      .ribbon-wrapper
-        .ribbon
-          {{project.year}}
-      .card-header
-        %a(href="{{project.url}}")
-          {{project.title}}
-      .card-copy
-        %p
-          {{project.copy}}
-      .card-link
-        %a.octicon.octicon-octoface(href="http://github.com/{{project.github}}")
-          GitHub
-        %a.octicon.octicon-globe(href="{{project.url}}")
-          Site
-      .card-year
-        .badges
-          {% for technology in project.technologies %}
-          .badge(class="{{technology.class}}")
-            {{technology.name}}
-          {% endfor %}
+    {% include _project.html project=project %}
     {% endfor %}
   %h4 Other Projects
   .cards
     {% for project in site.data.projects.other %}
-    .card
-      .ribbon-wrapper
-        .ribbon
-          {{project.year}}
-      .card-header
-        %a(href="{{project.url}}")
-          {{project.title}}
-      .card-copy
-        %p
-          {{project.copy}}
-      .card-link
-        %a.octicon.octicon-octoface(href="http://github.com/{{project.github}}")
-          GitHub
-        %a.octicon.octicon-globe(href="{{project.url}}")
-          Site
-      .card-year
-        .badges
-          {% for technology in project.technologies %}
-          .badge(class="{{technology.class}}")
-            {{technology.name}}
-          {% endfor %}
+    {% include _project.html project=project %}
     {% endfor %}

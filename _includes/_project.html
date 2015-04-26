@@ -1,0 +1,41 @@
+<div class='card'>
+  <div class='ribbon-wrapper'>
+    <div class='ribbon'>
+      {{project.year}}
+    </div>
+  </div>
+  <div class='card-header'>
+    <a href='{{project.link}}' target='_blank'>
+      {{project.title}}
+    </a>
+  </div>
+  <div class='card-image'>
+    {% if project.image %}
+    <img src='{{project.image}}'>
+    {% endif %}
+  </div>
+  <div class='card-copy'>
+    <p>
+      {{project.copy}}
+    </p>
+  </div>
+  <div class='card-link'>
+    <a class='octicon octicon-octoface' href='http://github.com/{{project.github}}'>
+      GitHub
+    </a>
+    <a class='octicon octicon-globe' href='{{project.link}}' target='_blank'>
+      Site
+    </a>
+  </div>
+  <div class='card-year'>
+    <div class='badges'>
+      {% for technology in site.data.technologies %}
+      {% if project.technologies contains technology.name %}
+      <div class='badge {{technology.class}}'>
+        {{technology.name}}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.card
+  .ribbon-wrapper
+    .ribbon
+      {{project.year}}
+  .card-header
+    %a(href="{{project.link}}" target="_blank")
+      {{project.title}}
+  .card-image
+    {% if project.image %}
+    %img(src="{{project.image}}")
+    {% endif %}
+  .card-copy
+    %p
+      {{project.copy}}
+  .card-link
+    %a.octicon.octicon-octoface(href="http://github.com/{{project.github}}")
+      GitHub
+    %a.octicon.octicon-globe(href="{{project.link}}" target="_blank")
+      Site
+  .card-year
+    .badges
+      {% for technology in site.data.technologies %}
+      {% if project.technologies contains technology.name %}
+      .badge(class="{{technology.class}}")
+        {{technology.name}}
+      {% endif %}
+      {% endfor %}

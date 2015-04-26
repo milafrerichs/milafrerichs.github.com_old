@@ -1,0 +1,4 @@
+{% assign filtered_projects = (site.projects | where: 'what', what | sort: 'date' | reverse) %}
+{% for project in filtered_projects %}
+{% include _project.html project=project %}
+{% endfor %}

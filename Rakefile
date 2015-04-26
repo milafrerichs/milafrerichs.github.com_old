@@ -1,3 +1,5 @@
+task default: [:haml]
+
 namespace :haml do
   require 'haml'
 

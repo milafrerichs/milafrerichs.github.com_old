@@ -4,3 +4,5 @@ ga_username: 'UA-367775-15'
 markdown: rdiscount
 permalink: pretty
 
+collections:
+  projects:
