@@ -6,7 +6,8 @@ include_home: yes
   {% include social.html %}
   <h3>Projects</h3>
   <div class='cards'>
-    {% for project in site.data.mapping_projects %}
+    {% assign sorted_projects = (site.projects | sort: 'date' | reverse) %}
+    {% for project in sorted_projects %}
     {% include _project.html project=project %}
     {% endfor %}
   </div>

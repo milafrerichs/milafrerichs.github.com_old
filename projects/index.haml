@@ -6,7 +6,8 @@
   {% include social.html %}
   %h3 Projects
   .cards
-    {% for project in site.data.mapping_projects %}
+    {% assign sorted_projects = (site.projects | sort: 'date' | reverse) %}
+    {% for project in sorted_projects %}
     {% include _project.html project=project %}
     {% endfor %}
   %h4 APIs
