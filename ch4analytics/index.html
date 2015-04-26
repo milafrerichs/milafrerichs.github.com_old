@@ -1,0 +1,36 @@
+---
+layout: default
+include_home: yes
+---
+<div id='cv'>
+  <h1>Mila Frerichs</h1>
+  <img class='me' src='{{site.baseurl}}/assets/images/mf.jpeg'>
+  <h2>
+    Developer, Civic Hacker
+    <br>
+    Geo- &amp; Data-Geek
+  </h2>
+  {% include social.html %}
+  <h3>About me</h3>
+  <p>I'm a software developer from Münster, Germany and started my own company 'Civic Vision' mid 2014. With my company I want to help non-profits and governments make better use of their data, tap their full potential and help them create meaningful and creative maps and visualizations.</p>
+  <h3>Testimonial</h3>
+  <div class='testimonials'>
+    <div class='testimonial'>
+      <blockquote class='testimonial-text'>
+        <p>Mila and I worked together on the CIP Civic Engagement App for the Council Infrastructure Committee with CM Mark Kersey. He proved himself to be an excellent and detail oriented developer with a strong grasp on both the fundamentals of iterative test driven development and automated deployment as well user centric design. He brings a broad range of skills in other areas to the table that would benefit any project or initiative. It was my pleasure to work with him and look forward to collaborating on other projects in the future.</p>
+      </blockquote>
+      <div class='testimonial-author'>
+        <a href='http://www.linkedin.com/in/ortelius/'>Jeffrey Johnson, Senior Software Engineer</a>
+      </div>
+    </div>
+  </div>
+  <h3>Projects</h3>
+  <h4>Visualizations</h4>
+  <div class='cards'>
+    {% include _technology_projects.html technology="d3" %}
+  </div>
+  <h4>Mapping Projects</h4>
+  <div class='cards'>
+    {% include _what_projects.html what="mapping" %}
+  </div>
+</div>

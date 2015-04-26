@@ -1,0 +1,38 @@
+\---
+\layout: default
+\include_home: yes
+\---
+#cv
+  %h1 Mila Frerichs
+  %img.me(src="{{site.baseurl}}/assets/images/mf.jpeg" )
+  %h2
+    Developer, Civic Hacker
+    %br
+    Geo- &amp; Data-Geek
+  {% include social.html %}
+  %h3 About me
+  %p I'm a software developer from Münster, Germany and started my own company 'Civic Vision' mid 2014. With my company I want to help non-profits and governments make better use of their data, tap their full potential and help them create meaningful and creative maps and visualizations.
+  %h3 Testimonial
+  .testimonials
+    .testimonial
+      %blockquote.testimonial-text
+        %p Mila and I worked together on the CIP Civic Engagement App for the Council Infrastructure Committee with CM Mark Kersey. He proved himself to be an excellent and detail oriented developer with a strong grasp on both the fundamentals of iterative test driven development and automated deployment as well user centric design. He brings a broad range of skills in other areas to the table that would benefit any project or initiative. It was my pleasure to work with him and look forward to collaborating on other projects in the future.
+      .testimonial-author
+        %a(href="http://www.linkedin.com/in/ortelius/")Jeffrey Johnson, Senior Software Engineer
+
+  %h3 Skills
+  %ul
+    %li Javascript/CoffeeScript
+    %li d3.js
+    %li leaflet.js/OpenLayers.js/mapbox.js
+    %li CartoDB
+    %li Angular.js/knockout.js
+    %li SASS
+    %li TDD/BDD (chai.js/mocha.js/sinon.js)
+  %h3 Projects
+  %h4 Visualizations
+  .cards
+    {% include _technology_projects.html technology="d3" %}
+  %h4 Mapping Projects
+  .cards
+    {% include _what_projects.html what="mapping" %}
