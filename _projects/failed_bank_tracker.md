@@ -7,7 +7,7 @@ technologies:
   - handlebars
   - middleman
   - cartodb
-language: Javscript
+language: Javascript
 what: "mapping"
 year: Mar 2015
 date: 201503

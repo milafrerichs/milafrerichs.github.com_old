@@ -1,0 +1,6 @@
+- name: Ruby
+  class: ruby
+- name: Javascript
+  class: javascript
+- name: Python
+  class: python
