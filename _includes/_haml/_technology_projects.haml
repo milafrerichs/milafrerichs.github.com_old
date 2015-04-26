@@ -1,0 +1,6 @@
+{% assign filtered_projects = (site.projects | sort: 'date' | reverse) %}
+{% for project in filtered_projects %}
+{% if project.technologies contains technology %}
+{% include _project.html project=project %}
+{% endif %}
+{% endfor %}
