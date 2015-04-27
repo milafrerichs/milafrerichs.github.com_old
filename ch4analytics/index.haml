@@ -27,7 +27,8 @@
       .grid-item
         %h4 {{skill.name}}
         %p
-          {% for skillType in skill.skills %}
+          {% for skillName in skill.skills %}
+          {% assign skillType = site.data.technologies | where: 'name', skillName | first %}
           .badge(class="{{skillType.class}}")
             {{skillType.name}}
           {% endfor %}

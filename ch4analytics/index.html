@@ -31,7 +31,8 @@ include_home: yes
       <div class='grid-item'>
         <h4>{{skill.name}}</h4>
         <p>
-          {% for skillType in skill.skills %}
+          {% for skillName in skill.skills %}
+          {% assign skillType = site.data.technologies | where: 'name', skillName | first %}
           <div class='badge {{skillType.class}}'>
             {{skillType.name}}
           </div>

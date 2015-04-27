@@ -1,59 +1,38 @@
 ch4analytics:
   - name: Languages
     skills:
-      - name: Javascript
-        class: frontend
-      - name: CoffeeScript
-        class: frontend
-      - name: Ruby
-        class: backend
-      - name: SASS/SCSS
-        class: frontend
+      - Javascript
+      - CoffeeScript
+      - Ruby
+      - SASS/SCSS
+      - HAML
   - name: Data
     skills:
-      - name: d3.js
-        class: frontend
-      - name: R
-        class: backend
-      - name: OpenRefine
-        class: backend
+      - d3.js
+      - R
+      - OpenRefine
   - name: Client-Side-Frameworks
     skills:
-      - name: knockout.js
-        class: frontend
-      - name: Angular.js
-        class: frontend
+      - knockout.js
+      - Angular.js
   - name: Mapping
     skills:
-      - name: leaflet.js
-        class: frontend
-      - name: mapbox.js
-        class: frontend
-      - name: CartoDB
-        class: backend
-      - name: openlayers.js
-        class: frontend
+      - leaflet.js
+      - mapbox.js
+      - CartoDB
+      - openlayers.js
   - name: Testing
     skills:
-      - name: TDD
-        class: backend
-      - name: BDD
-        class: backend
-      - name: chai.js
-        class: frontend
-      - name: mocha.js
-        class: frontend
-      - name: sinon.js
-        class: frontend
-      - name: karma
-        class: backend
-      - name: rspec
-        class: backend
+      - TDD
+      - BDD
+      - chai.js
+      - mocha.js
+      - sinon.js
+      - karma
+      - rspec
   - name: Misc
     skills:
-      - name: middleman
-        class: backend
-      - name: Jekyll
-        class: backend
-      - name: Sinatra
-        class: backend
+      - underscore.js
+      - middleman
+      - Jekyll
+      - Sinatra
