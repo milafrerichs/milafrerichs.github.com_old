@@ -22,8 +22,6 @@
   class: frontend
 - name: openlayers.js
   class: frontend
-- name: knockout.js
-  class: frontend
 - name: Angular.js
   class: frontend
 - name: chai.js
