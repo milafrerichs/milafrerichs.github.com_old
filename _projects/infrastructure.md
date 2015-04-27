@@ -8,6 +8,7 @@ image: '/assets/images/infrastructure_map.png'
 year: 2014
 date: 201401
 what: "mapping"
+ch4analytics: true
 language: "Python"
 technologies:
   - Django
