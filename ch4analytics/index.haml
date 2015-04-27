@@ -40,7 +40,13 @@
     {% include _project.html project=project %}
     {% endfor %}
 
-  %h3 Get in touch
-  %a.calendly(href= "https://calendly.com/civicvision" target= "_blank")
-    Schedule a meeting
-    %span with Calendly
+  .get-in-touch
+    %h3 Get in touch
+    .calendly
+      %a.get-in-touch-button(href= "https://calendly.com/civicvision" target= "_blank")
+        Schedule a meeting
+        %span with Calendly
+    .book-me
+      %a.get-in-touch-button#bookme-week
+        Book me
+        %span for a half week
