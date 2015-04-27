@@ -24,6 +24,23 @@ include_home: yes
       </div>
     </div>
   </div>
+  <div class='badges' id='skills'>
+    <h3>Skills</h3>
+    <div class='grid-items-lines'>
+      {% for skill in site.data.skills.ch4analytics %}
+      <div class='grid-item'>
+        <h4>{{skill.name}}</h4>
+        <p>
+          {% for skillType in skill.skills %}
+          <div class='badge {{skillType.class}}'>
+            {{skillType.name}}
+          </div>
+          {% endfor %}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
   <h3>Projects</h3>
   <h4>Visualizations</h4>
   <div class='cards'>

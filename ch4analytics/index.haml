@@ -20,15 +20,18 @@
       .testimonial-author
         %a(href="http://www.linkedin.com/in/ortelius/")Jeffrey Johnson, Senior Software Engineer
 
-  %h3 Skills
-  %ul
-    %li Javascript/CoffeeScript
-    %li d3.js
-    %li leaflet.js/OpenLayers.js/mapbox.js
-    %li CartoDB
-    %li Angular.js/knockout.js
-    %li SASS
-    %li TDD/BDD (chai.js/mocha.js/sinon.js)
+  #skills.badges
+    %h3 Skills
+    .grid-items-lines
+      {% for skill in site.data.skills.ch4analytics %}
+      .grid-item
+        %h4 {{skill.name}}
+        %p
+          {% for skillType in skill.skills %}
+          .badge(class="{{skillType.class}}")
+            {{skillType.name}}
+          {% endfor %}
+      {% endfor %}
   %h3 Projects
   %h4 Visualizations
   .cards
