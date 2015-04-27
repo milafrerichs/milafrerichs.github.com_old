@@ -34,12 +34,11 @@
           {% endfor %}
       {% endfor %}
   %h3 Projects
-  %h4 Visualizations
   .cards
-    {% include _technology_projects.html technology="d3" %}
-  %h4 Mapping Projects
-  .cards
-    {% include _what_projects.html what="mapping" %}
+    {% assign filtered_projects = (site.projects | where: 'ch4analytics', true | sort: 'date' | reverse) %}
+    {% for project in filtered_projects %}
+    {% include _project.html project=project %}
+    {% endfor %}
 
   %h3 Get in touch
   %a.calendly(href= "https://calendly.com/civicvision" target= "_blank")
