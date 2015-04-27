@@ -8,9 +8,15 @@
   year: 2014
   url: http://codeformuenster.org/civic-hacking-101
 - title: "Code for America: Open San Diego"
+  venue: SD Ruby
+  year: 2014
+- title: "Code for America: Open San Diego"
   venue: Python SD
   year: 2014
   video: https://youtu.be/Gxm_MLhgI8k?t=11m55s
+- title: "Code for America: Open San Diego"
+  venue: San Diego JS
+  year: 2014
 - title: Introduction to D3
   venue: Monster on Rails
   year: 2013
