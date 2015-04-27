@@ -2,7 +2,7 @@
 \layout: default
 \include_home: yes
 \---
-#cv
+#cv.ch4
   %h1 Mila Frerichs
   %img.me(src="{{site.baseurl}}/assets/images/mf.jpeg" )
   %h2
@@ -25,7 +25,7 @@
     .grid-items-lines
       {% for skill in site.data.skills.ch4analytics %}
       .grid-item
-        %h4 {{skill.name}}
+        %h5 {{skill.name}}
         %p
           {% for skillName in skill.skills %}
           {% assign skillType = site.data.technologies | where: 'name', skillName | first %}

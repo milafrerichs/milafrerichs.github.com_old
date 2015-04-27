@@ -2,7 +2,7 @@
 layout: default
 include_home: yes
 ---
-<div id='cv'>
+<div class='ch4' id='cv'>
   <h1>Mila Frerichs</h1>
   <img class='me' src='{{site.baseurl}}/assets/images/mf.jpeg'>
   <h2>
@@ -29,7 +29,7 @@ include_home: yes
     <div class='grid-items-lines'>
       {% for skill in site.data.skills.ch4analytics %}
       <div class='grid-item'>
-        <h4>{{skill.name}}</h4>
+        <h5>{{skill.name}}</h5>
         <p>
           {% for skillName in skill.skills %}
           {% assign skillType = site.data.technologies | where: 'name', skillName | first %}
