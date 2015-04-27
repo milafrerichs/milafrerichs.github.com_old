@@ -1,23 +1,37 @@
+- name: Javascript
+  class: frontend
+- name: CoffeeScript
+  class: frontend
 - name: d3
+  class: frontend
+- name: d3.js
   class: frontend
 - name: sass
   class: frontend
 - name: handlebars
   class: frontend
-- name: middleman
-  class: backend
-- name: cartodb
-  class: backend
 - name: mapbox.js
   class: frontend
 - name: turf.js
   class: frontend
-- name: Django
-  class: backend
 - name: knockout.js
   class: frontend
 - name: underscore.js
   class: frontend
+- name: leaflet.js
+  class: frontend
+- name: openlayers.js
+  class: frontend
+- name: Angular.js
+  class: frontend
+- name: chai.js
+  class: frontend
+- name: mocha.js
+  class: frontend
+- name: sinon.js
+  class: frontend
+- name: Django
+  class: backend
 - name: Sinatra
   class: backend
 - name: Wombat
@@ -32,7 +46,27 @@
   class: backend
 - name: SimplerTiles
   class: backend
+- name: middleman
+  class: backend
 - name: Jekyll
   class: backend
 - name: Docker
+  class: backend
+- name: TDD
+  class: backend
+- name: BDD
+  class: backend
+- name: karma
+  class: backend
+- name: rspec
+  class: backend
+- name: CartoDB
+  class: backend
+- name: R
+  class: backend
+- name: Ruby
+  class: backend
+- name: SASS/SCSS
+  class: frontend
+- name: HAML
   class: backend

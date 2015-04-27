@@ -1,0 +1,68 @@
+---
+layout: default
+title: Front End Developer - ch4Analytics
+include_home: yes
+---
+<div class='ch4' id='cv'>
+  <h1>Mila Frerichs</h1>
+  <img class='me' src='{{site.baseurl}}/assets/images/mf.jpeg'>
+  <h2>
+    Developer, Civic Hacker
+    <br>
+    Geo- &amp; Data-Geek
+  </h2>
+  {% include social.html %}
+  <h3>About me</h3>
+  <p>I'm a software developer from Münster, Germany and started my own company &raquo;Civic Vision&laquo; mid 2014.</p>
+  <h3>Testimonial</h3>
+  <div class='testimonials'>
+    <div class='testimonial'>
+      <blockquote class='testimonial-text'>
+        <p>Mila and I worked together on the CIP Civic Engagement App for the Council Infrastructure Committee with CM Mark Kersey. He proved himself to be an excellent and detail oriented developer with a strong grasp on both the fundamentals of iterative test driven development and automated deployment as well user centric design. He brings a broad range of skills in other areas to the table that would benefit any project or initiative. It was my pleasure to work with him and look forward to collaborating on other projects in the future.</p>
+      </blockquote>
+      <div class='testimonial-author'>
+        <a href='http://www.linkedin.com/in/ortelius/'>Jeffrey Johnson, Senior Software Engineer, Oceanside, CA</a>
+      </div>
+    </div>
+  </div>
+  <div class='badges' id='skills'>
+    <h3>Skills</h3>
+    <div class='grid-items-lines'>
+      {% for skill in site.data.skills.ch4analytics %}
+      <div class='grid-item'>
+        <h5>{{skill.name}}</h5>
+        <p>
+          {% for skillName in skill.skills %}
+          {% assign skillType = site.data.technologies | where: 'name', skillName | first %}
+          <div class='badge {{skillType.class}}'>
+            {{skillType.name}}
+          </div>
+          {% endfor %}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <h3>Projects</h3>
+  <div class='cards'>
+    {% assign filtered_projects = (site.projects | where: 'ch4analytics', true | sort: 'date' | reverse) %}
+    {% for project in filtered_projects %}
+    {% include _project.html project=project %}
+    {% endfor %}
+  </div>
+  <div class='get-in-touch'>
+    <h3>Get in touch</h3>
+    <div class='calendly'>
+      <a class='get-in-touch-button' href='https://calendly.com/civicvision' target='_blank'>
+        Schedule a meeting
+        <span>with Calendly</span>
+      </a>
+    </div>
+    <div class='book-me'>
+      <a class='get-in-touch-button' id='bookme-week'>
+        Book me
+        <span>for a half week</span>
+      </a>
+    </div>
+  </div>
+</div>

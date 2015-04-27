@@ -5,8 +5,9 @@ github: okfde/armsexport-map
 link: http://okfde.github.io/armsexport-map/
 image: '/assets/images/armsexport_map.png'
 year: 2014
-date: 201408
+date: 201410
 what: "mapping"
+ch4analytics: true
 language: "Javascript"
 technologies:
   - middleman

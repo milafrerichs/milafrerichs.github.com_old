@@ -1,0 +1,38 @@
+ch4analytics:
+  - name: Languages
+    skills:
+      - Javascript
+      - CoffeeScript
+      - Ruby
+      - SASS/SCSS
+      - HAML
+  - name: Data
+    skills:
+      - d3.js
+      - R
+      - OpenRefine
+  - name: Client-Side-Frameworks
+    skills:
+      - knockout.js
+      - Angular.js
+  - name: Mapping
+    skills:
+      - leaflet.js
+      - mapbox.js
+      - CartoDB
+      - openlayers.js
+  - name: Testing
+    skills:
+      - TDD
+      - BDD
+      - chai.js
+      - mocha.js
+      - sinon.js
+      - karma
+      - rspec
+  - name: Misc
+    skills:
+      - underscore.js
+      - middleman
+      - Jekyll
+      - Sinatra
