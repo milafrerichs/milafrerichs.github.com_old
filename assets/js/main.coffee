@@ -34,7 +34,7 @@ $ ->
   if $('#cv.ch4').length > 0
     $('#bookme-week').click (e) ->
       e.preventDefault()
-      amount = 2000*100
+      amount = 1600*100
       description = "A work week of Mila Frerichs"
       success = (token) ->
         $('#thank-you').show()
