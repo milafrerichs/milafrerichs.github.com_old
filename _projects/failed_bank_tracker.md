@@ -7,7 +7,7 @@ what: "mapping"
 ch4analytics: true
 year: Mar 2015
 date: 201503
-github: https://github.com/milafrerichs/failed-bank-tracker-map/
+github: milafrerichs/failed-bank-tracker-map/
 link: https://milafrerichs.de/failed-bank-tracker-map/
 technologies:
   - d3

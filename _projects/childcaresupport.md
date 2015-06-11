@@ -7,7 +7,7 @@ ch4analytics: true
 language: Javascript
 year: Apr 2015
 date: 201504
-github: https://github.com/civicvision/betreuungsgeld
+github: civicvision/betreuungsgeld
 link: http://civicvision.de/betreuungsgeld
 technologies:
   - d3
