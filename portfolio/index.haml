@@ -29,7 +29,7 @@
         .ribbon
           {{project.year}}
       .card-header
-        %a(href="{{project.url}}")
+        %a(href="{{project.link}}")
           {{project.title}}
       .card-image
         {% if project.image %}
@@ -41,7 +41,7 @@
       .card-link
         %a.octicon.octicon-octoface(href="http://github.com/{{project.github}}")
           GitHub
-        %a.octicon.octicon-globe(href="{{project.url}}")
+        %a.octicon.octicon-globe(href="{{project.link}}")
           Site
       .card-year
         .badges
