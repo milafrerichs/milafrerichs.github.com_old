@@ -1,0 +1,86 @@
+---
+layout: main
+---
+<!-- primary -->
+<div class="primary"> <!-- HENTRY-->
+    <article class="hentry blog-single">
+        <!--ENTRY-HEADER-->
+        <header class="entry-header">
+
+          {% if page.category || page.categories %}
+            <span class="cat-links">
+              <!--
+                <a href="#" title="View all posts in Design" rel="category tag">Life</a> /
+                <a href="#" title="View all posts in Design" rel="category tag">Architecture</a>
+                -->
+            </span>
+          {% endif %}
+
+            <h1 class="entry-title"><a href="{{page.url}}">{{page.title}}</a></h1>
+
+            <!--entry-meta-->
+            <div class="entry-meta">
+                <span class="entry-date"> 
+                  <time class="entry-date" datetime="2014-11-11T14:25:27+00:00">{{page.date | date: '%B %d, %Y'}}</time>
+                </span> 
+            </div>
+            <!--entry-meta-->
+
+        </header>
+        <!--ENTRY-HEADER-->
+        {% if page.image %}
+        <!--featured-->
+        <div class="featured">
+            <a href="blog-single.html">
+              <img src="images/{{ page.image }}" alt="img02" />
+            </a>
+        </div>
+        <!--featured-->
+        {% endif %}
+        <!-- entry-content -->
+        <div class="entry-content">
+          {{ content }}
+          {% if page.tags %}
+             <!-- .post-tags -->
+             <div class="post-tags tagcloud">
+               {% for tag in page.tags %}
+               <a href="#" rel="tag">{{tag}}</a>
+                {% endfor %}
+             </div>
+             <!-- .post-tags -->
+             {% endif %}
+        </div>
+        <!-- entry-content -->
+        <!-- .post-navigation -->
+        <nav class="navigation post-navigation">
+            <div class="nav-links">
+              {% if page.previous %}
+              <a href="{{page.previous.url}}" rel="prev"><span class="meta-nav">Previous Post</span>{{page.previous.title}}</a>
+              {% endif %}
+              {% if page.next %}
+              <a href="{{page.next.url}}" rel="next"><span class="meta-nav">Next Post</span>{{page.next.title}}</a>
+              {% endif %}
+            </div>
+        </nav>
+        <!-- .post-navigation -->
+        <!-- realated-posts -->
+        <div class="yarpp-related">
+            <h3>You May Also Like</h3>
+            <div class="yarpp-thumbnails-horizontal">
+              {% for post in site.related_posts %}
+              <a class="yarpp-thumbnail" href="{{post.url}}">
+                  {% if post.image %}
+                    <span class="yarpp-thumbnail-default">
+                        <img src="images/320taste.jpg" alt="image">
+                    </span>
+                    {% endif %}
+                    <span class="yarpp-thumbnail-title">{{post.title}}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- realated-posts -->
+    </article>
+    <!-- HENTRY-->
+</div>
+<!-- primary -->

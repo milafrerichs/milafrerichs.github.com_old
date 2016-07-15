@@ -1,0 +1,40 @@
+<!-- FOOTER -->
+<footer class="footer" > 
+  
+  <!-- widget-area -->
+  <div class="widget-area"> 
+    
+    <!-- l-fixed -->
+    <div class="l-fixed"> 
+      <!-- widget : text -->
+      <aside class="widget widget_text">
+        <h3 class="widget-title">About Me</h3>
+        <div class="textwidget">
+          <p>Mila Frerichs is a data expert who helps governments and NGOs to update their data processes. He specializes in creating data pipelines (getting, cleaning, transforming data) and creating engaging and beatiful visualizations.</p>
+        </div>
+      </aside>
+      <!-- widget : text --> 
+      <!-- widget : recent-posts -->
+      <aside class="widget widget_recent_entries">
+        <h3 class="widget-title">Recent Posts</h3>
+        <ul>
+          {% for post in site.posts | limit: 3 %}
+            <li><a href="{{post.url}}">{{post.title}}</a></li>
+          {% endfor %}
+        </ul>
+      </aside>
+      <!-- widget : recent-posts --> 
+      <!-- widget : flickr -->
+      <aside class="widget widget_flickr">
+        <h3 class="widget-title">Photos on flickr</h3>
+        <div class="flickr-badges flickr-badges-s"> 
+          <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?size=s&amp;count=6&amp;display=random&amp;layout=x&amp;source=user&amp;user=96623008@N00"></script> 
+        </div>
+      </aside>
+      <!-- widget : flickr --> 
+    </div>
+    <!-- l-fixed --> 
+  </div>
+  <!-- widget-area --> 
+</footer>
+<!-- FOOTER --> 
