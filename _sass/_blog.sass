@@ -1,3 +1,5 @@
+$footer-background: desaturate(darken($base-accent-color, 20), 30)
+$footer-border-color: lighten($footer-background, 20)
 /* --------------------------------------------
  *	
  *	Project 	 : TuneUP
@@ -1068,7 +1070,7 @@ figure .gallery-caption
     border-bottom: 1px solid #eee
 
 .footer .widget_recent_entries ul li
-  border-bottom-color: #333
+  border-bottom-color: $footer-border-color
 
 /* 5.5 WIDGET CATEGORIES
 
@@ -1170,13 +1172,15 @@ figure .gallery-caption
 /* 6.1 FOOTER GENERAL
 
 .footer
+  background: $footer-background
   padding: 1em 0 0 0
   text-align: center
-  color: #888
-  background-color: #252525
+  color: #aaa
   margin-top: 50px
   overflow: auto
   clear: left
+  .widget-title
+    border-bottom-color: $footer-border-color
   .copyright
     clear: left
     border-top: solid 1px #333
