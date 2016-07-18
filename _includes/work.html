@@ -2,8 +2,7 @@
 <div id='projects'>
   <h3>Recent Work</h3>
   <ul class='projects'>
-    {% assign recent_projects = (site.projects | sort: 'date' | reverse) %}
-    {% for project in recent_projects limit: 5 %}
+    {% for project in site.data.projects.short |limit: 5 %}
     <li>
       {{project.title}}
       <a class='octicon octicon-octoface' href='{{project.github}}'>
