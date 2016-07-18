@@ -32,7 +32,7 @@ layout: default
         <!--featured-->
         <div class="featured">
             <a href="blog-single.html">
-              <img src="images/{{ page.image }}" alt="img02" />
+              <img src="{{site.url}}/assets/images/{{ page.image.url }}" alt="{{page.image.alt}}" />
             </a>
         </div>
         <!--featured-->
@@ -71,7 +71,7 @@ layout: default
               <a class="yarpp-thumbnail" href="{{post.url}}">
                   {% if post.image %}
                     <span class="yarpp-thumbnail-default">
-                        <img src="images/320taste.jpg" alt="image">
+                      <img src="{{site.url}}/assets/images/{{post.image.url}}" alt="{{post.image.alt}}">
                     </span>
                     {% endif %}
                     <span class="yarpp-thumbnail-title">{{post.title}}</span>
