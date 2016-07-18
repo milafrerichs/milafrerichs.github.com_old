@@ -1,33 +1,33 @@
-<header class='centered-navigation'>
-  <div class='centered-navigation-wrapper'>
-    <a class='mobile-logo' href='javascript:void(0)'>
-      <img alt='' src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png'>
-    </a>
-    <a class='centered-navigation-menu-button' href=''>MENU</a>
-    <ul class='centered-navigation-menu'>
-      <li class='nav-link'>
-        <a href='{{site.baseurl}}/#projects'>Projects</a>
-      </li>
-      <li class='nav-link'>
-        <a href='{{site.baseurl}}/#contributions'>Contributions</a>
-      </li>
-      <li class='nav-link'>
-        <a href='{{site.baseurl}}/#leisure'>Leisure</a>
-      </li>
-      <li class='logo'>
-        <a class='logo' href='javascript:void(0)'>
-          <img alt='' src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png'>
-        </a>
-      </li>
-      <li class='nav-link'>
-        <a href='{{site.baseurl}}/posts'>Blog</a>
-      </li>
-      <li class='nav-link'>
-        <a href='#get-in-touch'>Get in touch</a>
-      </li>
-      <li>
-        <a href='{{site.baseurl}}/legal'>Legal</a>
-      </li>
-    </ul>
+<!--menu-wrapper-->
+<div class="menu-wrapper"> 
+  
+  <!--l-fixed-->
+  <div class="l-fixed"> <a class="menu-toggle" href="#menu"><i class="fa fa-bars"></i></a> 
+    
+    <!-- menu -->
+    <nav id="menu" class="menu">
+      <ul>
+        <li><a href="/index.html/">Home</a></li>
+        <li><a href="{{site.baseurl}}/blog">Blog</a></li>
+        <li><a href="{{site.baseurl}}/legal">Legal Notice</a>
+          <ul>
+            <li><a href="{{site.baseurl}}/legal/privacy/">Privacy Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="{{site.baseurl}}/cv">CV</a></li>
+        <li><a href="https://github.com/milafrerichs">GitHub</a></li>
+        <li><a href="https://twitter.com/milafrerichs">Twitter</a></li>
+        <li><a href="https://civicvision.de">Civic Vision</a></li>
+      </ul>
+    </nav>
+    <!-- menu --> 
+    {% if site.search %}
+    <!--search-wrapper-->
+    <div class="search-wrapper"> <a class="search-toggle"><i class="fa fa-search"></i></a> </div>
+    <!--search-wrapper--> 
+    {% endif %}
   </div>
-</header>
+  <!--l-fixed--> 
+  
+</div>
+<!--menu-wrapper--> 
