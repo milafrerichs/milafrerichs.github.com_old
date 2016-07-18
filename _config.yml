@@ -3,6 +3,8 @@ exclude: [".gitignore", "readme.md", "Gemfile", "Gemfile.lock"]
 ga_username: 'UA-367775-15'
 markdown: rdiscount
 permalink: pretty
+gems:
+  - jekyll-gist
 
 collections:
   projects:
