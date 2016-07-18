@@ -9,7 +9,7 @@ layout: default
       <!-- HENTRY-->
       <article class="hentry"> 
         <!--ENTRY-HEADER-->
-        {% if post.categories || post.category %}
+        {% if post.categories.length > 0 || post.category %}
           <header class="entry-header"> <span class="cat-links"> <a href="#" title="View all posts in Design" rel="category tag">Outdoor</a> / <a href="#" title="View all posts in Design" rel="category tag">Life</a> </span>
         {% endif %}
           <h1 class="entry-title"><a href="{{post.url}}">{{post.title}}</a></h1>
