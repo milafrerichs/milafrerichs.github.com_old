@@ -16,11 +16,13 @@
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/blog.css"/>
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/768.css">
-  {% if page.has_card %}
+  {% if page.layout == "blog-single" and page.card %}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@milafrerichs" />
-    <meta name="twitter:title" content="{{page.card.title}}" />
+    <meta name="twitter:title" content="{{page.title}}" />
     <meta name="twitter:description" content="{{page.card.description}}" />
-    <meta name="twitter:image" content="{{page.card.image_url}}" />
+    {% if page.image %}
+    <meta name="twitter:image" content="{{page.images_path}}/{{page.image.url}}" />
+    {% endif %}
   {% endif %}
 </head>
