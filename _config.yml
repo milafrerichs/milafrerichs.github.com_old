@@ -5,5 +5,25 @@ permalink: pretty
 gems:
   - jekyll-gist
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "blog-single"
+  -
+    scope:
+      path: ""
+    values:
+      images_path: "/assets/images"
+
 collections:
   projects:
+
