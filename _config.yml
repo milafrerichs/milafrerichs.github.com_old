@@ -23,6 +23,7 @@ defaults:
       path: ""
     values:
       images_path: "/assets/images"
+      domain: "http://milafrerichs.de"
 
 collections:
   projects:
