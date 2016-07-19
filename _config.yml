@@ -1,10 +1,29 @@
 # General Jekyll Config
 exclude: [".gitignore", "readme.md", "Gemfile", "Gemfile.lock"]
 ga_username: 'UA-367775-15'
-markdown: rdiscount
 permalink: pretty
 gems:
   - jekyll-gist
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "blog-single"
+  -
+    scope:
+      path: ""
+    values:
+      images_path: "/assets/images"
+
 collections:
   projects:
+
