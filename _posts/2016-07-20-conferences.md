@@ -36,3 +36,5 @@ The conferences I want to attend soon are:
 - [International Open Data Conference](http://opendatacon.org/), Madrid Spain
 - [Open Data Insitute Summit](http://theodi.org/panel-discussions/odi-summit-and-awards-2016), London, UK (depends on my vacation schedule)
 - [Code for America Summit](https://www.codeforamerica.org/summit), Oakland, CA, USA
+
+If you plan to go to one of these or already booked your ticket: Let's get in touch and connect at the conference.
