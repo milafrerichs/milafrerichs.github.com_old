@@ -38,7 +38,7 @@ They all have different perspectives and focus and listening to them always gets
 [Three Month Vacation](http://www.psychotactics.com/podcast/) from [Sean D’Souza](http://www.psychotactics.com) is one of the great content he is publishing on a regular basis. You should check out his books and courses as well. All worth the money. 
 His podcast is in line with his books, and he asks rhetorical questions and answers them and tries to get you thinking. He always sums up his points at the end. It always gets me thinking again how I run my business and how I do certain things.
 
-Other business Podcasts I listen to:
+## Other business Podcasts I listen to:
 
 - [The Art of Value](http://artofvalue.com/show/)
 - [The Productized Podcast](http://productizepodcast.com)
@@ -46,3 +46,5 @@ Other business Podcasts I listen to:
 
 The [Entreprogrammers](http://entreprogrammers.com/ ) podcast is worth the listen if you think you're the only one struggling with your business. Everyone is. And listening to them how they get together and find solutions for the struggles is worth the almost two-hour long conversation. It always gets me thinking about the struggles I have and what I do to resolve them. It's a recorded mastermind, and my master mind helps me talk about it as well.
 
+## Podcast App
+I use [Overcast](https://overcast.fm/) to listen to these podcasts, and it is great. Won’t switch anytime soon. You can add lists for your podcasts and effects such as „Smart Speed“ and „Voice Boost.“ I always listen to at least 1.4x speed, and Smart Speed picks the right speed so that everyone has a similar tempo. And Voice Boost streamlines the volume of the voices. Just awesome. 
