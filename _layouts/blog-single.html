@@ -82,5 +82,11 @@ layout: default
         <!-- realated-posts -->
     </article>
     <!-- HENTRY-->
+    {% if page.has_tweets %}
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    {% endif %}
+    {% if page.has_repo_cards %}
+      <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+    {% endif %}
 </div>
 <!-- primary -->
