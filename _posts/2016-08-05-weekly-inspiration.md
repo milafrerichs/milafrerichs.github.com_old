@@ -1,7 +1,7 @@
 ---
 title: This Weeks Inspiration
 image:
-  url: inpsiration.jpg
+  url: inspiration.jpg
   alt: Inspiration
 card:
   description: "Tweets, Photos, Blogposts and Repositories that caught my eye this week."
