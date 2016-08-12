@@ -31,7 +31,7 @@ layout: default
         {% if page.image %}
         <!--featured-->
         <div class="featured">
-            <a href="blog-single.html">
+          <a href="{{page.url}}">
               <img src="{{page.images_path}}/{{ page.image.url }}" alt="{{page.image.alt}}" />
             </a>
         </div>
@@ -44,7 +44,7 @@ layout: default
              <!-- .post-tags -->
              <div class="post-tags tagcloud">
                {% for tag in page.tags %}
-               <a href="#" rel="tag">{{tag}}</a>
+               <a href="" rel="tag">{{tag}}</a>
                 {% endfor %}
              </div>
              <!-- .post-tags -->

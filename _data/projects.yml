@@ -41,7 +41,7 @@ short:
     language: JavaScript
     year: Sept 2014
     github: https://github.com/codeformuenster/wahlkarte
-    link: https://codeformuenster.org/wahlkarte
+    url: https://codeformuenster.org/wahlkarte
     image: '/assets/images/election_map.png'
   - title: Offener Haushalt Münster
     technologies:
