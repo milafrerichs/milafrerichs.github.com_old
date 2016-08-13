@@ -2,6 +2,7 @@
 exclude: [".gitignore", "readme.md", "Gemfile", "Gemfile.lock"]
 ga_username: 'UA-367775-15'
 permalink: pretty
+exclude: [vendor]
 gems:
   - jekyll-gist
 
