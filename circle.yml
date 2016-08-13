@@ -7,4 +7,4 @@ test:
     - bundle exec htmlproof ./build --only-4xx --check-favicon --check-html
 notify:
   webhooks:
-    - https://hooks.zapier.com/hooks/catch/552616/40tgr5/
+    - url: https://hooks.zapier.com/hooks/catch/552616/40tgr5/
