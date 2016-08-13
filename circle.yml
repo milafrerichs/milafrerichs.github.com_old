@@ -1,0 +1,5 @@
+test:
+  post:
+    - bundle exec jekyll build
+    - bundle exec htmlproof ./build --only-4xx --check-favicon --check-html
+

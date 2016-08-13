@@ -9,3 +9,7 @@ gem 'haml'
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
+
+group :test do
+  gem 'html-proofer'
+end

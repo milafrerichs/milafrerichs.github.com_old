@@ -1,15 +1,14 @@
-%a(name="projects")
 #projects
   %h3 Recent Work
   %ul.projects
-    {% assign recent_projects = (site.projects | sort: 'date' | reverse) %}
+    {% assign recent_projects = (site.data.projects.short | sort: 'date' | reverse) %}
     {% for project in recent_projects limit: 5 %}
     %li
       {{project.title}}
       %a.octicon.octicon-octoface(href="{{project.github}}")
         GitHub
       {% if project.url %}
-      %a.octicon.octicon-globe(href="{{project.link}}")
+      %a.octicon.octicon-globe(href="{{project.url}}")
         Preview
       {% endif %}
       {{project.year}}
