@@ -27,5 +27,8 @@ defaults:
       domain: "http://milafrerichs.de"
 
 collections:
+  tags:
+    output: true
+    permalink: /blog/tags/:path
   projects:
 
