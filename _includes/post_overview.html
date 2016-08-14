@@ -1,0 +1,28 @@
+{% assign post=include.post %}
+<!-- HENTRY-->
+<article class="hentry"> 
+  <!--ENTRY-HEADER-->
+  <header class="entry-header"> 
+  {% if post.categories.length > 0 || post.category %}
+    <span class="cat-links"> <a href="#" title="View all posts in Design" rel="category tag">Outdoor</a> / <a href="#" title="View all posts in Design" rel="category tag">Life</a> </span>
+  {% endif %}
+    <h1 class="entry-title"><a href="{{post.url}}">{{post.title}}</a></h1>
+    <!--entry-meta-->
+    <div class="entry-meta"> <span class="entry-date"> <a href="{{post.url}}" rel="bookmark">
+          <time class="entry-date" datetime="{{post.date}}">{{ post.date | date: '%B %d, %Y' }}</time>
+      </a> </span> </div>
+    <!--entry-meta--> 
+    {% if post.image %}
+      <!--featured-->
+      <div class="featured"> <a href="{{post.url}}"> <img src="{{page.images_path}}/{{ post.image.url }}" alt="{{post.image.alt}}"> </a> </div>
+      <!--featured--> 
+    {% endif %}
+  </header>
+  <!--ENTRY-HEADER--> 
+  <!--entry-content-->
+  <div class="entry-content">
+    {{post.excerpt}}<p><a href="{{post.url}}" class="more-link">Continue reading ...</a> </p>
+  </div>
+  <!--entry-content--> 
+</article>
+<!-- HENTRY--> 
