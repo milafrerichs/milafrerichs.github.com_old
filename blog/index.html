@@ -15,9 +15,17 @@ layout: default
         {% endif %}
           <h1 class="entry-title"><a href="{{post.url}}">{{post.title}}</a></h1>
           <!--entry-meta-->
-          <div class="entry-meta"> <span class="entry-date"> <a href="{{post.url}}" rel="bookmark">
+          <div class="entry-meta">
+            <span class="entry-date"> <a href="{{post.url}}" rel="bookmark">
                 <time class="entry-date" datetime="{{post.date}}">{{ post.date | date: '%B %d, %Y' }}</time>
-            </a> </span> </div>
+            </a> </span> 
+            {% if post.reading_time %}
+            &#8226;
+            <span class="reading-time">
+              {{post.reading_time}}
+            </span>
+            {% endif %}
+          </div>
           <!--entry-meta--> 
           {% if post.image %}
             <!--featured-->
