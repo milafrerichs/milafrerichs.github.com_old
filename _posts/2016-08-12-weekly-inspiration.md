@@ -7,6 +7,8 @@ card:
   description: "Tweets, Photos, Blogposts and Repositories that caught my eye this week."
 has_tweets: true
 has_repo_cards: true
+tags:
+  - inspiration
 ---
 Tweets, Photos, Blogposts and Repositories that caught my eye this week.
 
