@@ -22,6 +22,18 @@ defaults:
   -
     scope:
       path: ""
+      type: tags
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: categories
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
     values:
       images_path: "/assets/images"
       domain: "http://milafrerichs.de"
@@ -30,5 +42,8 @@ collections:
   tags:
     output: true
     permalink: /blog/tags/:path
+  categories:
+    output: true
+    permalink: /blog/categories/:path
   projects:
 
