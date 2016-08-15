@@ -5,6 +5,8 @@ image:
   alt: NTC 2016 in San Jose
 card:
   description: "A list of conferences I attended this year and the ones I plan to attend"
+categories:
+  - work
 ---
 I went to just a few conferences this year just yet but plan on going to a few more. Conferences are a good way to connect with people, learn more about your craft or other people's business and get in the mindset of learning and speaking/socializing.
 

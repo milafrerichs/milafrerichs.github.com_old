@@ -8,7 +8,13 @@
     <nav id="menu" class="menu">
       <ul>
         <li><a href="{{site.baseurl}}/">Home</a></li>
-        <li><a href="{{site.baseurl}}/blog">Blog</a></li>
+        <li><a href="{{site.baseurl}}/blog">Blog</a>
+          <ul>
+            {% for category in site.categories %}
+            <li><a href="{{category.url}}">{{category.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
         <li><a href="{{site.baseurl}}/legal">Legal Notice</a>
           <ul>
             <li><a href="{{site.baseurl}}/legal/privacy/">Privacy Policy</a></li>

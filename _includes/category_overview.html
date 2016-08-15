@@ -1,0 +1,7 @@
+<div class="blog-grid">
+  <header class="entry-header">
+    <h1 class="entry-title">{{page.title}}</h1>
+  </header>
+  <p>All Posts in {{page.title}}</p>
+  {% include category_posts.html category=page.name %}
+</div>

@@ -1,0 +1,10 @@
+{% assign post=include.post %}
+{% if post.categories %}
+  <span class="cat-links">
+  {% for category_name in post.categories %}
+    {% assign category=site.categories | where: "name", category_name | first %}
+    <a href="{{category.url}}" title="View all posts in {{category.title}}" rel="category tag">{{category.title}}</a>
+    {% unless forloop.last %}/{% endunless %}
+  {% endfor %}
+  </span>
+{% endif %}

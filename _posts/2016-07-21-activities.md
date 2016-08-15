@@ -5,6 +5,9 @@ image:
   alt: Hipnotics Wakepark Antalya Turkey
 card:
   description: "I love sport, it helps me stay active and healthy"
+categories:
+  - work
+  - leisure
 ---
 Working for yourself can get lonely and monotone. Here are a few things I do to stay active and inspired.
 

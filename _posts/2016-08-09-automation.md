@@ -1,5 +1,7 @@
 ---
 title: Automation
+categories:
+  - work
 ---
 I love automating things. The less time I have to spend on a repeating task the better. When I’m repeating a job for three to four times, I will try to automate it. Even if it takes me way longer to automate it than to do it, I will try it. It’s such a relief for me not to do a tedious task over and over again.
 
