@@ -5,6 +5,8 @@ image:
   alt: Writing
 card:
   description: "These apps help me write"
+categories:
+  - work
 ---
 Since starting my writing commitment two weeks ago, I used these apps more frequently and am happy how they pan out. 
 I write at least 200 words daily now and am trying to streamline this process as much as possible. And make it as pain-free as possible. 

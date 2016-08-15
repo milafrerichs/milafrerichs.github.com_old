@@ -7,8 +7,10 @@ card:
   description: "You should listen to these five podcasts. Let me tell you why."
 tags:
   - business
+categories:
+  - work
 ---
-I listen to podcasts for a while now. I started with technical podcasts like [Giant Robots Smashing Into Other Giant Robots](http://giantrobots.fm/), [Ruby Rogues](https://devchat.tv/ruby-rogues), [Core Intuition](http://www.coreint.org) and more.
+I listen to podcasts for a while now. I started with technical podcasts like [Giant Robots Smashing Into Other Giant Robots](http://giantrobots.fm/), [Ruby Rogues](https://devchat.tv/ruby-rogues), [Core Intuition](http://www.coreint.org) and more.  <!-- short --> 
 I think I have an easier time listening to something than to read a blog post. I can listen to them while walking my dog, riding my bike to college back in the days or taking the train.
 
 Since starting my own business in 2014, I listen to more and more business and freelance related podcasts. I want to tell you about five that changed how I ran my business.
