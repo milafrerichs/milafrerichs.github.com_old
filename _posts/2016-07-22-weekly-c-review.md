@@ -5,6 +5,8 @@ image:
   alt: Weekly Review
 card:
   description: "I did it! Stuck to my three commitments"
+categories:
+  - work
 ---
 I committed to three habits I want to establish. Every week I share my commitment results. As a refresher here is the list of what I committed to doing each week:
 

@@ -3,8 +3,10 @@ title: Three tools that help me clean data
 image:
   url: cleaning-data.jpg
   alt: Cleaning Data
+categories:
+  - work
 ---
-Working with Open Data or data in general almost always includes getting your data into shape. It is commonly known as ETL (Extract, Transform, Load). I call it a Data Pipeline. The name Data Pipeline is much easier to understand than ETL, especially with folks who don’t have a technical background. And working with governments and social non-profits/advocacy groups, you most often talk to non-technical people. 
+Working with Open Data or data in general almost always includes getting your data into shape. It is commonly known as ETL (Extract, Transform, Load). I call it a Data Pipeline. <!-- short --> The name Data Pipeline is much easier to understand than ETL, especially with folks who don’t have a technical background. And working with governments and social non-profits/advocacy groups, you most often talk to non-technical people. 
 
 ## What is ETL
 

@@ -5,6 +5,8 @@ image:
   alt: Success
 card:
   description: "I've done it: Inbox ZERO!"
+categories:
+  - work
 ---
 I'm happy to be able to say: I'm back at **Inbox Zero**  
 After my last trip staying at a friends place for a week, my emails started to pile up, and my filters were not any good anymore.  

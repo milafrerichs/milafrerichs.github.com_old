@@ -5,6 +5,8 @@ image:
   alt: Drinking Water
 card:
   description: "My new civic tech project: Drinking Water Quality in San Diego"
+categories:
+  - civictech
 ---
 Last week I decided I should do something with the newly released [Open Data Portal](http://data.sandiego.gov) of the City of [San Diego](http://sandiego.gov).
 And I thought about Data Sets where I could reuse/redeploy apps from other cities. There are 44 datasets in the current portal, and I wanted to use something that could be done relatively quickly but still would be an improvement.

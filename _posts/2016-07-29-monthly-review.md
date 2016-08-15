@@ -1,8 +1,10 @@
 ---
 title: "Monthly Review"
+categories:
+  - work
 ---
 This is my first monthly review. That's why it will be not as good as I want. But I will publish a monthly review from now on.
-On a different note: I did my first real weekly review today. I thought about last week, cleaned up my stuff. I made a new list of my priorities and the projects I want to work on.  
+On a different note: I did my first real weekly review today. I thought about last week, cleaned up my stuff. I made a new list of my priorities and the projects I want to work on.  <!-- short --> 
 I cleaned my desk (well worth it). I wrote down my ideas to get more accomplished the next weeks and month. 
 I feel magnificent, and I'll commit to doing a weekly review every week. I did put it on my calendar for every Friday. So that's a good thing.
 
