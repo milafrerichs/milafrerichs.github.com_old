@@ -7,15 +7,7 @@ layout: default
         <!--ENTRY-HEADER-->
         <header class="entry-header">
 
-          {% if page.category || page.categories %}
-            <span class="cat-links">
-              <!--
-                <a href="#" title="View all posts in Design" rel="category tag">Life</a> /
-                <a href="#" title="View all posts in Design" rel="category tag">Architecture</a>
-                -->
-            </span>
-          {% endif %}
-
+            {% include post_categories.html post=page %}
             <h1 class="entry-title"><a href="{{page.url}}">{{page.title}}</a></h1>
 
             <!--entry-meta-->

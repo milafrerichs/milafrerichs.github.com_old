@@ -3,9 +3,7 @@
 <article class="hentry"> 
   <!--ENTRY-HEADER-->
   <header class="entry-header"> 
-  {% if post.categories.length > 0 || post.category %}
-    <span class="cat-links"> <a href="#" title="View all posts in Design" rel="category tag">Outdoor</a> / <a href="#" title="View all posts in Design" rel="category tag">Life</a> </span>
-  {% endif %}
+    {% include post_categories.html post=post %}
     <h1 class="entry-title"><a href="{{post.url}}">{{post.title}}</a></h1>
     <!--entry-meta-->
     <div class="entry-meta"> <span class="entry-date"> <a href="{{post.url}}" rel="bookmark">
