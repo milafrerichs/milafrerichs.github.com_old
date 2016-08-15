@@ -1,0 +1,7 @@
+<div class="grid-posts"> 
+{% for post in site.posts %}
+  {% if post.categories contains include.category %}
+    {% include post_grid.html post=post %}
+  {% endif %}
+{% endfor %}
+</div>
