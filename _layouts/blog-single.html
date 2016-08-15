@@ -15,6 +15,12 @@ layout: default
                 <span class="entry-date"> 
                   <time class="entry-date" datetime="2014-11-11T14:25:27+00:00">{{page.date | date: '%B %d, %Y'}}</time>
                 </span> 
+                {% if page.reading_time %}
+                &#8226;
+                <span class="reading-time">
+                  {{page.reading_time}}
+                </span>
+                {% endif %}
             </div>
             <!--entry-meta-->
 

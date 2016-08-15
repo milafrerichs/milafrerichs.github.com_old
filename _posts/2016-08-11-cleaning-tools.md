@@ -3,6 +3,7 @@ title: Three tools that help me clean data
 image:
   url: cleaning-data.jpg
   alt: Cleaning Data
+reading_time: 3 min
 categories:
   - work
 ---
