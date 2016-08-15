@@ -1,7 +1,7 @@
 # General Jekyll Config
 exclude: [".gitignore", "readme.md", "Gemfile", "Gemfile.lock"]
 ga_username: 'UA-367775-15'
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title.html
 exclude: [vendor]
 gems:
   - jekyll-gist
