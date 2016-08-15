@@ -1,5 +1,5 @@
 ---
-title: Ten things I do to stay productive while Working from home for yourself
+title: Ten things I do to stay productive while working from home for myself
 image:
   url: working-from-home.jpg
   alt: Office
