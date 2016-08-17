@@ -1,18 +1,18 @@
 ---
-title: Code Violations San Diego
+title: Code Enforcement Violations in San Diego
 image:
   url: code-violations-sd.png
-  alt: Code Violations Heatmap
+  alt: Code Enforcement Violations Heatmap
 card:
-  description: "Maps and data about open Code Violations Cases in San Diego"
+  description: "Maps and data about open Code Enforcement Violations Cases in San Diego"
 categories:
   - civictech
 ---
 I started looking again at the Open Data Portal in San Diego and searched for interesting data, data with a story.
 
-And I think I found it. I looked at the Code Violations before but this time I wanted to see if there were any overlap between Building Owners with Code Violations and recent Building Permits. I found 4 for the last six month. So I will dig deeper the next time. With more data.
+And I think I found it. I looked at the Code Enforcement Violations before but this time I wanted to see if there were any overlap between Building Owners with Code Enforcement Violations and recent Building Permits. I found 4 for the last six month. So I will dig deeper the next time. With more data.
 
-But this got me to another thing that I found digging through the data. Lot’s of Code Violations Cases are still open. And I even found a case open since 1993, yes 1993. I will contact the city to find out more and will keep you updated.
+But this got me to another thing that I found digging through the data. Lot’s of Code Enforcement Violations Cases are still open. And I even found a case open since 1993, yes 1993. I will contact the city to find out more and will keep you updated.
 
 In the meantime, I made a map with all the cases that are open longer than two years. Amazing how many there are. I also created a heatmap of all open cases. You can see it above.
 
@@ -42,3 +42,8 @@ open_cases_date =
 For the map I used Carto (previously CartoDB) to create the interactive map and the Heatmap image.
 Here is another map with the days since the case was open.
 ![DaysOpen]({{site.baseurl}}/assets/images/code-violations-days-open-sd.png)
+
+## Data Source
+Here is the data Source:  
+[City of San Diego Data Portal](http://data.sandiego.gov/dataset/code-enforcement-violations)  
+[Code Enforcement Status Report](https://www.sandiego.gov/development-services/opendsd/codeenfreports)
