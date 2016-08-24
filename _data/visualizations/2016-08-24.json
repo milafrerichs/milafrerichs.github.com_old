@@ -1,0 +1,23 @@
+[
+  {
+    "id": "#complaint_source",
+    "data": {
+      'description': 'Violations by reporting source',
+      'data': { 'url': '/data/case_by_case_source.csv'},
+      "transform": {
+        "calculate": [{"field": "highlight", "expr": "datum.case_source == \"Citizen Complaint\" ? \"true\" : \"false\""}]
+      },
+      'mark': 'bar',
+      'encoding': {
+        "y": {"field": "case_source", "type": "ordinal", "sort": {"op": "sum", "field": "cases"}, "axis": {"title": "Case Source"}},
+        "x": {"field": "cases", "type": "quantitative", "axis": {"title": "# Cases"}},
+        "color": {
+          "field": "highlight", "type": "nominal",
+          "scale": {"range": ["#eeeeee","#659CCA"]},
+          "legend": false
+        }
+      }
+    }
+  }
+]
+
