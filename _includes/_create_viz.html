@@ -1,0 +1,12 @@
+---
+---
+<script type="text/javascript">
+{% assign post_date= page.date | date: '%Y-%m-%d' %}
+{% for viz in site.data.visualizations[post_date] %}
+  vizSpec{{forloop.index}} = {{viz.data|jsonify}};
+  vizSpecLite{{forloop.index}}  = { mode: 'vega-lite', spec: vizSpec{{forloop.index}} , actions: false };
+  vg.embed("{{viz.id}}", vizSpecLite{{forloop.index}} , function(error, result) {
+      return;
+  });
+{% endfor %}
+</script>
