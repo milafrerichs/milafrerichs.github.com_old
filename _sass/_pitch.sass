@@ -1,0 +1,48 @@
+.pitch
+  @include outer-container()
+  text-align: center
+  @include media($mobile)
+    padding: 0 1em
+  h1
+    font-size: 4em
+    text-align: center
+    @include media($mobile)
+      font-size: 2em
+  h2
+    text-align: center
+  .email-signup
+    margin: 0 auto
+    width: 65%
+    @include media($mobile)
+      width: 100%
+    p
+      font-size: 1.5em
+      @include media($mobile)
+        font-size: 1.1em
+    .input-group
+      width: 80%
+      display: table
+      @include media($mobile)
+        width: 100%
+      input.form-field
+        max-width: none
+        float: left
+        display: table-cell
+        line-height: 1.8em
+        padding: 0
+        @include media($mobile)
+          float: none
+      .input-button
+        display: table-cell
+        width: 1%
+        vertical-align: middle
+        padding: 0
+        margin: 0
+        @include media($mobile)
+          display: block
+          width: 100%
+          input
+            width: 100%
+        input
+          line-height: 1.8em
+          margin: 0
