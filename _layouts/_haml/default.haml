@@ -1,0 +1,27 @@
+!!!
+%html
+  %body.fixed-menu
+    {% include _header.html %}
+    .container
+      %header.header
+        %h1.site-title
+          %a(href = "index.html" ) Mila Frerichs
+        %h2
+          Developer, Civic Hacker
+          %br/
+          Geo- & Data-Geek
+        {% include _navigation.html %}
+        .search-box
+          %form.search-form(action = "#" method = "get" role = "search" )
+            %input#search-field(name = "s" placeholder = "type and hit enter …" type = "search" value = "" )/
+      .middle.l-fixed
+        .content
+          {{content}}
+    {% include _footer.html %}
+    %script(src = "{{site.baseurl}}/assets/js/jquery-1.11.0.min.js" )
+    %script(src = "{{site.baseurl}}/assets/js/jquery-migrate-1.2.1.min.js" )
+    %script(src = "{{site.baseurl}}/assets/js/jquery.fitvids.js" )
+    %script(src = "{{site.baseurl}}/assets/js/jquery.validate.min.js" )
+    %script(src = "{{site.baseurl}}/assets/js/socialstream.jquery.js" )
+    %script(src = "{{site.baseurl}}/assets/js/blog.js" )
+    {% include _analytics.html %}
