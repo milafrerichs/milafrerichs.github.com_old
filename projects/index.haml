@@ -1,0 +1,20 @@
+\---
+\layout: default
+\include_home: yes
+\---
+#projects
+  %h3
+    D3 Projects
+  %ul.projects
+    {% assign recent_projects = (site.data.projects.d3 | sort: 'date' | reverse) %}
+    {% for project in recent_projects limit: 5 %}
+    %li
+      {{project.title}}
+      %a.octicon.octicon-octoface(href="{{project.github}}")
+        GitHub
+      {% if project.url %}
+      %a.octicon.octicon-globe(href="{{project.url}}")
+        Preview
+      {% endif %}
+      {{project.year}}
+    {% endfor %}

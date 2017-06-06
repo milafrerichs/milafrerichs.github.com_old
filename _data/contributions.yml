@@ -1,3 +1,7 @@
+- title: GeoNode Client (React)
+  url: https://github.com/GeoNode/geonode-client
+- title: GeoNode OSGeo Importer Client (React)
+  url: https://github.com/terranodo/importer-client
 - title: GeoNode
   url: https://github.com/GeoNode/geonode
 - title: SimplerTiles
