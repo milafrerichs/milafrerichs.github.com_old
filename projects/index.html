@@ -1,0 +1,26 @@
+---
+layout: default
+include_home: yes
+---
+<div id='projects'>
+  <h3>
+    D3 Projects
+  </h3>
+  <ul class='projects'>
+    {% assign recent_projects = (site.data.projects.d3 | sort: 'date' | reverse) %}
+    {% for project in recent_projects limit: 5 %}
+    <li>
+      {{project.title}}
+      <a class='octicon octicon-octoface' href='{{project.github}}'>
+        GitHub
+      </a>
+      {% if project.url %}
+      <a class='octicon octicon-globe' href='{{project.url}}'>
+        Preview
+      </a>
+      {% endif %}
+      {{project.year}}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

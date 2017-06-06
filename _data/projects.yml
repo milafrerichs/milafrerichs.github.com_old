@@ -1,18 +1,96 @@
+energy: &energy
+  title: Energy Production Germany
+  year: Aug 2016
+  date: 1470044450
+  github: https://github.com/CivicVision/energy-production-germany
+  url: http://civicvision.de/energy-production-germany/
+  technologies:
+    - d3
+
+code_enforcement: &code_enforcement
+  title: Code Enforcement Violations San Diego
+  year: Oct 2016
+  date: 1475314850
+  github: https://github.com/CivicVision/code_enforcement_violations_sd
+  url: http://civicvision.de/code_enforcement_violations_sd/
+  technologies:
+    - d3
+
+budget_viz_rp: &budget_viz_rp
+  title: Budget Visualization
+  copy: ""
+  image: ''
+  technologies:
+    - d3
+  year: Jan 2017
+  date: 1483269109
+  github: https://github.com/CivicVision/babbage-hack
+  url: https://fm.rlp.de/de/themen/finanzen/landeshaushalt/haushalt-interaktiv/
+
+child_care_germany: &child_care_germany
+  title: Child Care Support
+  copy: "Visualization about German Child Care support"
+  image: '/assets/images/betreuungsgeld.png'
+  technologies:
+    - d3
+  year: Apr 2015
+  date: 1427881250
+  github: https://github.com/civicvision/betreuungsgeld
+  url: http://civicvision.de/betreuungsgeld
+
+crime_sd: &crime_sd
+  title: Crime San Diego
+  copy: "Visualizations for Crime Data in San Diego: Data from Regional Library"
+  image: ''
+  technologies:
+    - d3
+  year: Oct 2015
+  date: 1443692450
+  github: https://github.com/civicvision/crime-san-diego
+  url: http://civicvision.de/crime-san-diego
+
+geonode_client: &geonode_client
+  title: GeoNode Client (React)
+  url: https://github.com/GeoNode/geonode-client
+  date: 1491477265
+  year: Apr 2017
+
+osgeo_importer_client: &osgeo_importer_client
+  title: GeoNode OSGeo Importer Client (React)
+  url: https://github.com/terranodo/importer-client
+  date: 1494069265
+  year: May 2017
+d3:
+  - *energy
+  - *code_enforcement
+  - *budget_viz_rp
+  - *child_care_germany
+  - *crime_sd
+
 short:
-  - title: Child Care Support
-    copy: "Visualization about German Child Care support"
-    image: '/assets/images/betreuungsgeld.png'
+  - *energy
+  - *code_enforcement
+  - *budget_viz_rp
+  - *child_care_germany
+  - *crime_sd
+  - *geonode_client
+  - *osgeo_importer_client
+  - title: Armsexport Map
+    copy: ""
+    image: ''
     technologies:
       - d3
-    year: Apr 2015
-    github: https://github.com/civicvision/betreuungsgeld
-    url: http://civicvision.de/betreuungsgeld
+    year: Dec 2014
+    date: 1417430450
+    github: https://github.com/CivicVision/armsexport-map
+    url: http://okfde.github.io/armsexport-map/
   - title: Failed Bank Tracker
     copy: "Failed Banks in Europe with the Open Economics workgroup of the Open Knowledge Foundation"
     image: '/assets/images/failed-bank-tracker.png'
     technologies:
       - d3
     year: Feb 2015
+    date: 1422787250
     github: https://github.com/milafrerichs/failed-bank-tracker-map
     url: http://milafrerichs.de/failed-bank-tracker-map
   - title: Simple Tile Server
@@ -20,6 +98,7 @@ short:
       - SimplerTiles
     language: Ruby
     year: March 2015
+    date: 1425206450
     github: https://github.com/milafrerichs/simpler-tiles-examples
   - title: Bürgerbüro Wartezeiten API
     technologies:
@@ -27,6 +106,7 @@ short:
       - Wombat
     language: Ruby
     year: Jan 2015
+    date: 1420108850
     github: https://github.com/codeformuenster/buergerbuero
   - title: Wahllokal API
     technologies:
