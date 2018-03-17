@@ -37,3 +37,16 @@ Die Idee wäre einmal im halben Jahr oder nach Belieben der Region  ein Treffen 
 
 Dieser Blogpost ist ein Work-in-Progress post und wird sicher in den nächsten Tagen/Wochen von mir überarbeitet werden.  
 Ich freue mich auf die Diskussionen zu dem Thema. 
+
+## Kontakt zu lokalen NGOs
+
+Die OKF und Code for Germany kann helfen die Labs mit lokalen NGOs zu verknüpfen und diese anzutrainieren um größtmöglichen Impact zu haben.  
+
+## Stammtisch mit Kommunen
+Cfg Gremium mit Vertretern der kommunen und der Länder/Bund zu einem Stammtisch halbjährlich oder so. Im Sinne de kgst it Stammtisch 
+
+
+## Austausch mit der Zivilgesellschaft und 
+Interdisziplinären Austausch zwischen Städten, Community und Bürgern, Lehrern, non Profits, etc
+
+
