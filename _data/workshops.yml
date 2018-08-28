@@ -1,3 +1,11 @@
+- title: Geospatial Data Visualizations with d3
+  venue: FOSS4G Oceania
+  year: 2018
+- title: Geospatial Data Visualizations with d3
+  venue: NACIS
+  year: 2018
+  canceled: true
+  reason: Needed to cancel due to schedule conflict (wedding)
 - title: Mapping with D3
   venue: FOSS4G
   year: 2017
