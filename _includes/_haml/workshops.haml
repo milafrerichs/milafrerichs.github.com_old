@@ -6,7 +6,8 @@
       {% if workshop.canceled %}
       %del
         {% include _workshop_info.html workshop=workshop %}
-      {{workshop.reason}}
+      %i
+        {{workshop.reason}}
       {% else %}
       {% include _workshop_info.html workshop=workshop %}
       {% endif %}
