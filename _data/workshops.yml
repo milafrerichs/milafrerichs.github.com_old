@@ -1,3 +1,12 @@
+- title: Geospatial Data Visualizations with d3
+  venue: FOSS4G Oceania
+  url: https://foss4g-oceania.org/attend/workshops
+  year: 2018
+- title: Geospatial Data Visualizations with d3
+  venue: NACIS
+  year: 2018
+  canceled: true
+  reason: Needed to cancel due to late schedule conflict (wedding)
 - title: Mapping with D3
   venue: FOSS4G
   year: 2017

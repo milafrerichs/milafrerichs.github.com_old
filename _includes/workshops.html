@@ -1,23 +1,19 @@
 <div id='workshops'>
-  <h3>Recent Workshops</h3>
-  <ul class='workshops'>
-    {% for workshop in site.data.workshops %}
-    <li>
-      {% if workshop.url %}
-      <a href='{{workshop.url}}' target='_blank'>
-        {{workshop.title}},
-      </a>
-      {% else %}
-      {{workshop.title}},
-      {% endif %}
-      {{workshop.venue}},
-      {{workshop.year}}
-      {% if workshop.video %}
-      <a href='{{workshop.video}}' target='_blank'>
-        <i class='fa fa-video-camera'></i>
-      </a>
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
+<h3>Recent Workshops</h3>
+<ul class='workshops'>
+{% for workshop in site.data.workshops %}
+<li>
+{% if workshop.canceled %}
+<del>
+{% include _workshop_info.html workshop=workshop %}
+</del>
+<i>
+{{workshop.reason}}
+</i>
+{% else %}
+{% include _workshop_info.html workshop=workshop %}
+{% endif %}
+</li>
+{% endfor %}
+</ul>
 </div>

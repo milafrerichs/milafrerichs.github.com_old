@@ -3,17 +3,13 @@
   %ul.workshops
     {% for workshop in site.data.workshops %}
     %li
-      {% if workshop.url %}
-      %a(href="{{workshop.url}}" target="_blank")
-        {{workshop.title}},
+      {% if workshop.canceled %}
+      %del
+        {% include _workshop_info.html workshop=workshop %}
+      %i
+        {{workshop.reason}}
       {% else %}
-      {{workshop.title}},
-      {% endif %}
-      {{workshop.venue}},
-      {{workshop.year}}
-      {% if workshop.video %}
-      %a(href="{{workshop.video}}" target="_blank")
-        %i.fa.fa-video-camera
+      {% include _workshop_info.html workshop=workshop %}
       {% endif %}
 
     {% endfor %}
